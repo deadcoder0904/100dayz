@@ -13,5 +13,3 @@
 ## POSTS
 
 ![POSTS](http://imgur.com/pN3QMbf.png)
-
-![POSTS](http://imgur.com/pN3QMbf.png)
