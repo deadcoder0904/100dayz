@@ -12,13 +12,21 @@
 <meta property="og:url" content="https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/index.html">
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 11 👾I’m back 💙Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated.So what is a Cron Job ?Cron is a daemon, viz, a background process which run">
-<meta property="og:updated_time" content="2016-11-23T08:30:21.772Z">
+<meta property="og:updated_time" content="2016-12-04T14:03:51.154Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Run Github Trending Every 3 Hours and Push to Github">
 <meta name="twitter:description" content="DAY 11 👾I’m back 💙Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated.So what is a Cron Job ?Cron is a daemon, viz, a background process which run">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Run Github Trending Every 3 Hours and Push to Github</title>
@@ -27,53 +35,102 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/12/Github-Trending-Site/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&text=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&title=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&is_video=false&description=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Run Github Trending Every 3 Hours and Push to Github&body=Check out this article: https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&title=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&title=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&title=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&title=Run Github Trending Every 3 Hours and Push to Github"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/&name=Run Github Trending Every 3 Hours and Push to Github&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-11-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 11 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-a-Cron-Job-to-run-Github-Trending-Script-Every-3-hours-so-that-the-data-remains-updated"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated.</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#So-what-is-a-Cron-Job"><span class="toc-number">2.</span> <span class="toc-text">So what is a Cron Job ?</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Cron-is-a-daemon-viz-a-background-process-which-runs-at-a-specified-time-If-we-want-to-take-a-backup-daily-then-instead-of-doing-it-manually-every-fucking-day-we-write-a-script-amp-provide-it-to-cron-then-cron-runs-the-script-in-that-specified-time-What-if-we-shut-down-our-PC-or-Lappy-at-the-specified-time-Then-the-script-won’t-run-instead-we-need-to-use-anacron"><span class="toc-number">2.1.</span> <span class="toc-text">Cron is a daemon, viz, a background process which runs at a specified time. If we want to take a backup daily then instead of doing it manually every fucking day, we write a script & provide it to cron, then cron runs the script in that specified time. What if we shut down our PC or Lappy at the specified time. Then, the script won’t run instead we need to use anacron.</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Anacron-is-the-cron-for-desktops-and-laptops-It-does-not-expect-the-system-to-be-running-24-x-7-like-a-server"><span class="toc-number">3.</span> <span class="toc-text">Anacron is the cron for desktops and laptops. It does not expect the system to be running 24 x 7 like a server.</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#For-example-if-we-have-to-send-an-Email-to-our-subscribers-daily-at-9-PM-as-a-regular-cron-job-and-if-our-laptop-is-not-ON-at-9-PM-the-Email-won’t-be-sent"><span class="toc-number">3.1.</span> <span class="toc-text">For example, if we have to send an Email to our subscribers daily at 9 PM as a regular cron job, and if our laptop is not ON at 9 PM, the Email won’t be sent.</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#However-if-we-have-the-same-job-scheduled-in-anacron-we-can-be-sure-that-it-will-be-executed-once-the-laptop-is-ON"><span class="toc-number">3.1.1.</span> <span class="toc-text">However, if we have the same job scheduled in anacron, we can be sure that it will be executed once the laptop is ON.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Syntax-of-crontab-field-description"><span class="toc-number">4.</span> <span class="toc-text">Syntax of crontab (field description)</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#The-syntax-is"><span class="toc-number">4.1.</span> <span class="toc-text">The syntax is:</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-4-5-path-to-command-arg1-arg2"><span class="toc-number">4.1.1.</span> <span class="toc-text">1 2 3 4 5 /path/to/command arg1 arg2</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#OR"><span class="toc-number">4.1.2.</span> <span class="toc-text">OR</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2-3-4-5-root-email-sh"><span class="toc-number">4.1.3.</span> <span class="toc-text">1 2 3 4 5 /root/email.sh</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Where"><span class="toc-number">4.1.3.1.</span> <span class="toc-text">Where,</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Minute-0-59"><span class="toc-number">4.1.4.</span> <span class="toc-text">1: Minute (0-59)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Hours-0-23"><span class="toc-number">4.1.5.</span> <span class="toc-text">2: Hours (0-23)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Day-0-31"><span class="toc-number">4.1.6.</span> <span class="toc-text">3: Day (0-31)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-Month-0-12-12-December"><span class="toc-number">4.1.7.</span> <span class="toc-text">4: Month (0-12 [12 == December])</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-Day-of-the-week-0-7-7-or-0-sunday"><span class="toc-number">4.1.8.</span> <span class="toc-text">5: Day of the week(0-7 [7 or 0 == sunday])</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#path-to-command-–-Script-or-command-name-to-schedule"><span class="toc-number">4.1.9.</span> <span class="toc-text">/path/to/command – Script or command name to schedule</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Easy-to-remember-format"><span class="toc-number">5.</span> <span class="toc-text">Easy to remember format:</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#command-to-be-executed"><span class="toc-number">6.</span> <span class="toc-text">    * command to be executed</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#"><span class="toc-number">7.</span> <span class="toc-text">- - - - -</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#-1"><span class="toc-number">8.</span> <span class="toc-text">| | | | |</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#—–-Day-of-week-0-7-Sunday-0-or-7"><span class="toc-number">9.</span> <span class="toc-text">| | | | —– Day of week (0 - 7) (Sunday=0 or 7)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#——-Month-1-12"><span class="toc-number">10.</span> <span class="toc-text">| | | ——- Month (1 - 12)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#———-Day-of-month-1-31"><span class="toc-number">11.</span> <span class="toc-text">| | ——— Day of month (1 - 31)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#———–-Hour-0-23"><span class="toc-number">12.</span> <span class="toc-text">| ———– Hour (0 - 23)</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#————-Minute-0-59"><span class="toc-number">13.</span> <span class="toc-text">————- Minute (0 - 59)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Here’s-my-runGithubTrending-script"><span class="toc-number">13.0.1.</span> <span class="toc-text">Here’s my runGithubTrending script</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#So-here’s-how-we-can-runGithubTrending-script-every-3-hours-using-Cron"><span class="toc-number">13.0.2.</span> <span class="toc-text">So, here’s how we can runGithubTrending script every 3 hours using Cron</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">13.0.3.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Run Github Trending Every 3 Hours and Push to Github
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-10T18:30:00.000Z" itemprop="datePublished">2016-11-11</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
-
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-11-👾"><a href="#DAY-11-👾" class="headerlink" title="DAY 11 👾"></a>DAY 11 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-a-Cron-Job-to-run-Github-Trending-Script-Every-3-hours-so-that-the-data-remains-updated"><a href="#Today-I-created-a-Cron-Job-to-run-Github-Trending-Script-Every-3-hours-so-that-the-data-remains-updated" class="headerlink" title="Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated."></a>Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated.</h4><h1 id="So-what-is-a-Cron-Job"><a href="#So-what-is-a-Cron-Job" class="headerlink" title="So what is a Cron Job ?"></a>So what is a Cron Job ?</h1><h2 id="Cron-is-a-daemon-viz-a-background-process-which-runs-at-a-specified-time-If-we-want-to-take-a-backup-daily-then-instead-of-doing-it-manually-every-fucking-day-we-write-a-script-amp-provide-it-to-cron-then-cron-runs-the-script-in-that-specified-time-What-if-we-shut-down-our-PC-or-Lappy-at-the-specified-time-Then-the-script-won’t-run-instead-we-need-to-use-anacron"><a href="#Cron-is-a-daemon-viz-a-background-process-which-runs-at-a-specified-time-If-we-want-to-take-a-backup-daily-then-instead-of-doing-it-manually-every-fucking-day-we-write-a-script-amp-provide-it-to-cron-then-cron-runs-the-script-in-that-specified-time-What-if-we-shut-down-our-PC-or-Lappy-at-the-specified-time-Then-the-script-won’t-run-instead-we-need-to-use-anacron" class="headerlink" title="Cron is a daemon, viz, a background process which runs at a specified time. If we want to take a backup daily then instead of doing it manually every fucking day, we write a script &amp; provide it to cron, then cron runs the script in that specified time. What if we shut down our PC or Lappy at the specified time. Then, the script won’t run instead we need to use anacron."></a><code>Cron</code> is a daemon, viz, a background process which runs at a specified time. If we want to take a backup daily then instead of doing it manually every fucking day, we write a script &amp; provide it to <code>cron</code>, then <code>cron</code> runs the script in that specified time. What if we shut down our PC or Lappy at the specified time. Then, the script won’t run instead we need to use <code>anacron</code>.</h2><h1 id="Anacron-is-the-cron-for-desktops-and-laptops-It-does-not-expect-the-system-to-be-running-24-x-7-like-a-server"><a href="#Anacron-is-the-cron-for-desktops-and-laptops-It-does-not-expect-the-system-to-be-running-24-x-7-like-a-server" class="headerlink" title="Anacron is the cron for desktops and laptops. It does not expect the system to be running 24 x 7 like a server."></a>Anacron is the cron for desktops and laptops. It does not expect the system to be running 24 x 7 like a server.</h1><h2 id="For-example-if-we-have-to-send-an-Email-to-our-subscribers-daily-at-9-PM-as-a-regular-cron-job-and-if-our-laptop-is-not-ON-at-9-PM-the-Email-won’t-be-sent"><a href="#For-example-if-we-have-to-send-an-Email-to-our-subscribers-daily-at-9-PM-as-a-regular-cron-job-and-if-our-laptop-is-not-ON-at-9-PM-the-Email-won’t-be-sent" class="headerlink" title="For example, if we have to send an Email to our subscribers daily at 9 PM as a regular cron job, and if our laptop is not ON at 9 PM, the Email won’t be sent."></a>For example, if we have to send an Email to our subscribers daily at 9 PM as a regular cron job, and if our laptop is not ON at 9 PM, the Email won’t be sent.</h2><h3 id="However-if-we-have-the-same-job-scheduled-in-anacron-we-can-be-sure-that-it-will-be-executed-once-the-laptop-is-ON"><a href="#However-if-we-have-the-same-job-scheduled-in-anacron-we-can-be-sure-that-it-will-be-executed-once-the-laptop-is-ON" class="headerlink" title="However, if we have the same job scheduled in anacron, we can be sure that it will be executed once the laptop is ON."></a>However, if we have the same job scheduled in anacron, we can be sure that it will be executed once the laptop is ON.</h3><h1 id="Syntax-of-crontab-field-description"><a href="#Syntax-of-crontab-field-description" class="headerlink" title="Syntax of crontab (field description)"></a>Syntax of crontab (field description)</h1><h2 id="The-syntax-is"><a href="#The-syntax-is" class="headerlink" title="The syntax is:"></a>The syntax is:</h2><h3 id="1-2-3-4-5-path-to-command-arg1-arg2"><a href="#1-2-3-4-5-path-to-command-arg1-arg2" class="headerlink" title="1 2 3 4 5 /path/to/command arg1 arg2"></a>1 2 3 4 5 /path/to/command arg1 arg2</h3><h3 id="OR"><a href="#OR" class="headerlink" title="OR"></a>OR</h3><h3 id="1-2-3-4-5-root-email-sh"><a href="#1-2-3-4-5-root-email-sh" class="headerlink" title="1 2 3 4 5 /root/email.sh"></a>1 2 3 4 5 /root/email.sh</h3><h4 id="Where"><a href="#Where" class="headerlink" title="Where,"></a>Where,</h4><h3 id="1-Minute-0-59"><a href="#1-Minute-0-59" class="headerlink" title="1: Minute (0-59)"></a>1: Minute (0-59)</h3><h3 id="2-Hours-0-23"><a href="#2-Hours-0-23" class="headerlink" title="2: Hours (0-23)"></a>2: Hours (0-23)</h3><h3 id="3-Day-0-31"><a href="#3-Day-0-31" class="headerlink" title="3: Day (0-31)"></a>3: Day (0-31)</h3><h3 id="4-Month-0-12-12-December"><a href="#4-Month-0-12-12-December" class="headerlink" title="4: Month (0-12 [12 == December])"></a>4: Month (0-12 [12 == December])</h3><h3 id="5-Day-of-the-week-0-7-7-or-0-sunday"><a href="#5-Day-of-the-week-0-7-7-or-0-sunday" class="headerlink" title="5: Day of the week(0-7 [7 or 0 == sunday])"></a>5: Day of the week(0-7 [7 or 0 == sunday])</h3><h3 id="path-to-command-–-Script-or-command-name-to-schedule"><a href="#path-to-command-–-Script-or-command-name-to-schedule" class="headerlink" title="/path/to/command – Script or command name to schedule"></a>/path/to/command – Script or command name to schedule</h3><h1 id="Easy-to-remember-format"><a href="#Easy-to-remember-format" class="headerlink" title="Easy to remember format:"></a><em>Easy to remember format:</em></h1><h1 id="command-to-be-executed"><a href="#command-to-be-executed" class="headerlink" title="    * command to be executed"></a><em> </em> <em> </em> * command to be executed</h1><h1 id=""><a href="#" class="headerlink" title="- - - - -"></a>- - - - -</h1><h1 id="-1"><a href="#-1" class="headerlink" title="| | | | |"></a>| | | | |</h1><h1 id="—–-Day-of-week-0-7-Sunday-0-or-7"><a href="#—–-Day-of-week-0-7-Sunday-0-or-7" class="headerlink" title="| | | | —– Day of week (0 - 7) (Sunday=0 or 7)"></a>| | | | —– Day of week (0 - 7) (Sunday=0 or 7)</h1><h1 id="——-Month-1-12"><a href="#——-Month-1-12" class="headerlink" title="| | | ——- Month (1 - 12)"></a>| | | ——- Month (1 - 12)</h1><h1 id="———-Day-of-month-1-31"><a href="#———-Day-of-month-1-31" class="headerlink" title="| | ——— Day of month (1 - 31)"></a>| | ——— Day of month (1 - 31)</h1><h1 id="———–-Hour-0-23"><a href="#———–-Hour-0-23" class="headerlink" title="| ———– Hour (0 - 23)"></a>| ———– Hour (0 - 23)</h1><h1 id="————-Minute-0-59"><a href="#————-Minute-0-59" class="headerlink" title="————- Minute (0 - 59)"></a>————- Minute (0 - 59)</h1><h3 id="Here’s-my-runGithubTrending-script"><a href="#Here’s-my-runGithubTrending-script" class="headerlink" title="Here’s my runGithubTrending script"></a>Here’s my <strong>runGithubTrending</strong> script</h3><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$&#xA0;<font color="#d5e617">cd</font>&#xA0;<font color="#d5e617">&apos;</font><font color="#c00000">full/path/to/github-trending</font><font color="#d5e617">&apos;</font>
-<span id="L2"><font color="#d5e617">2&#xA0;</font></span>$ yarn&#xA0;<font color="#d5e617">start</font>
-<span id="L3"><font color="#d5e617">3&#xA0;</font></span>$ git add&#xA0;<font color="#c000c0">-A</font>
-<span id="L4"><font color="#d5e617">4&#xA0;</font></span>$ git commit&#xA0;<font color="#c000c0">-m</font>&#xA0;<font color="#d5e617">&quot;</font><font color="#c00000">Update</font><font color="#d5e617">&quot;</font>
-<span id="L5"><font color="#d5e617">5&#xA0;</font></span>$ git push origin master
-</font></pre></figure>
-<h3 id="So-here’s-how-we-can-runGithubTrending-script-every-3-hours-using-Cron"><a href="#So-here’s-how-we-can-runGithubTrending-script-every-3-hours-using-Cron" class="headerlink" title="So, here’s how we can runGithubTrending script every 3 hours using Cron"></a>So, here’s how we can <strong>runGithubTrending</strong> script every 3 hours using Cron</h3><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ crontab&#xA0;<font color="#c000c0">-l</font>&#xA0;|&#xA0;<font color="#c000c0">{</font>&#xA0;cat<font color="#d5e617">;</font>&#xA0;<font color="#d5e617">echo</font><font color="#c00000">&#xA0;</font><font color="#d5e617">&quot;</font><font color="#c00000">0 */3 * * * runGithubTrending</font><font color="#d5e617">&quot;</font><font color="#d5e617">;</font>&#xA0;<font color="#c000c0">}</font>&#xA0;| crontab -
-</font></pre></figure>
-<h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
     </div>
-  </article>
+  </header>
   
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-11-👾"><a href="#DAY-11-👾" class="headerlink" title="DAY 11 👾"></a>DAY 11 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-a-Cron-Job-to-run-Github-Trending-Script-Every-3-hours-so-that-the-data-remains-updated"><a href="#Today-I-created-a-Cron-Job-to-run-Github-Trending-Script-Every-3-hours-so-that-the-data-remains-updated" class="headerlink" title="Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated."></a>Today I created a Cron Job to run Github Trending Script Every 3 hours so that the data remains updated.</h4><h1 id="So-what-is-a-Cron-Job"><a href="#So-what-is-a-Cron-Job" class="headerlink" title="So what is a Cron Job ?"></a>So what is a Cron Job ?</h1><h2 id="Cron-is-a-daemon-viz-a-background-process-which-runs-at-a-specified-time-If-we-want-to-take-a-backup-daily-then-instead-of-doing-it-manually-every-fucking-day-we-write-a-script-amp-provide-it-to-cron-then-cron-runs-the-script-in-that-specified-time-What-if-we-shut-down-our-PC-or-Lappy-at-the-specified-time-Then-the-script-won’t-run-instead-we-need-to-use-anacron"><a href="#Cron-is-a-daemon-viz-a-background-process-which-runs-at-a-specified-time-If-we-want-to-take-a-backup-daily-then-instead-of-doing-it-manually-every-fucking-day-we-write-a-script-amp-provide-it-to-cron-then-cron-runs-the-script-in-that-specified-time-What-if-we-shut-down-our-PC-or-Lappy-at-the-specified-time-Then-the-script-won’t-run-instead-we-need-to-use-anacron" class="headerlink" title="Cron is a daemon, viz, a background process which runs at a specified time. If we want to take a backup daily then instead of doing it manually every fucking day, we write a script &amp; provide it to cron, then cron runs the script in that specified time. What if we shut down our PC or Lappy at the specified time. Then, the script won’t run instead we need to use anacron."></a><code>Cron</code> is a daemon, viz, a background process which runs at a specified time. If we want to take a backup daily then instead of doing it manually every fucking day, we write a script &amp; provide it to <code>cron</code>, then <code>cron</code> runs the script in that specified time. What if we shut down our PC or Lappy at the specified time. Then, the script won’t run instead we need to use <code>anacron</code>.</h2><h1 id="Anacron-is-the-cron-for-desktops-and-laptops-It-does-not-expect-the-system-to-be-running-24-x-7-like-a-server"><a href="#Anacron-is-the-cron-for-desktops-and-laptops-It-does-not-expect-the-system-to-be-running-24-x-7-like-a-server" class="headerlink" title="Anacron is the cron for desktops and laptops. It does not expect the system to be running 24 x 7 like a server."></a>Anacron is the cron for desktops and laptops. It does not expect the system to be running 24 x 7 like a server.</h1><h2 id="For-example-if-we-have-to-send-an-Email-to-our-subscribers-daily-at-9-PM-as-a-regular-cron-job-and-if-our-laptop-is-not-ON-at-9-PM-the-Email-won’t-be-sent"><a href="#For-example-if-we-have-to-send-an-Email-to-our-subscribers-daily-at-9-PM-as-a-regular-cron-job-and-if-our-laptop-is-not-ON-at-9-PM-the-Email-won’t-be-sent" class="headerlink" title="For example, if we have to send an Email to our subscribers daily at 9 PM as a regular cron job, and if our laptop is not ON at 9 PM, the Email won’t be sent."></a>For example, if we have to send an Email to our subscribers daily at 9 PM as a regular cron job, and if our laptop is not ON at 9 PM, the Email won’t be sent.</h2><h3 id="However-if-we-have-the-same-job-scheduled-in-anacron-we-can-be-sure-that-it-will-be-executed-once-the-laptop-is-ON"><a href="#However-if-we-have-the-same-job-scheduled-in-anacron-we-can-be-sure-that-it-will-be-executed-once-the-laptop-is-ON" class="headerlink" title="However, if we have the same job scheduled in anacron, we can be sure that it will be executed once the laptop is ON."></a>However, if we have the same job scheduled in anacron, we can be sure that it will be executed once the laptop is ON.</h3><h1 id="Syntax-of-crontab-field-description"><a href="#Syntax-of-crontab-field-description" class="headerlink" title="Syntax of crontab (field description)"></a>Syntax of crontab (field description)</h1><h2 id="The-syntax-is"><a href="#The-syntax-is" class="headerlink" title="The syntax is:"></a>The syntax is:</h2><h3 id="1-2-3-4-5-path-to-command-arg1-arg2"><a href="#1-2-3-4-5-path-to-command-arg1-arg2" class="headerlink" title="1 2 3 4 5 /path/to/command arg1 arg2"></a>1 2 3 4 5 /path/to/command arg1 arg2</h3><h3 id="OR"><a href="#OR" class="headerlink" title="OR"></a>OR</h3><h3 id="1-2-3-4-5-root-email-sh"><a href="#1-2-3-4-5-root-email-sh" class="headerlink" title="1 2 3 4 5 /root/email.sh"></a>1 2 3 4 5 /root/email.sh</h3><h4 id="Where"><a href="#Where" class="headerlink" title="Where,"></a>Where,</h4><h3 id="1-Minute-0-59"><a href="#1-Minute-0-59" class="headerlink" title="1: Minute (0-59)"></a>1: Minute (0-59)</h3><h3 id="2-Hours-0-23"><a href="#2-Hours-0-23" class="headerlink" title="2: Hours (0-23)"></a>2: Hours (0-23)</h3><h3 id="3-Day-0-31"><a href="#3-Day-0-31" class="headerlink" title="3: Day (0-31)"></a>3: Day (0-31)</h3><h3 id="4-Month-0-12-12-December"><a href="#4-Month-0-12-12-December" class="headerlink" title="4: Month (0-12 [12 == December])"></a>4: Month (0-12 [12 == December])</h3><h3 id="5-Day-of-the-week-0-7-7-or-0-sunday"><a href="#5-Day-of-the-week-0-7-7-or-0-sunday" class="headerlink" title="5: Day of the week(0-7 [7 or 0 == sunday])"></a>5: Day of the week(0-7 [7 or 0 == sunday])</h3><h3 id="path-to-command-–-Script-or-command-name-to-schedule"><a href="#path-to-command-–-Script-or-command-name-to-schedule" class="headerlink" title="/path/to/command – Script or command name to schedule"></a>/path/to/command – Script or command name to schedule</h3><h1 id="Easy-to-remember-format"><a href="#Easy-to-remember-format" class="headerlink" title="Easy to remember format:"></a><em>Easy to remember format:</em></h1><h1 id="command-to-be-executed"><a href="#command-to-be-executed" class="headerlink" title="    * command to be executed"></a><em> </em> <em> </em> * command to be executed</h1><h1 id=""><a href="#" class="headerlink" title="- - - - -"></a>- - - - -</h1><h1 id="-1"><a href="#-1" class="headerlink" title="| | | | |"></a>| | | | |</h1><h1 id="—–-Day-of-week-0-7-Sunday-0-or-7"><a href="#—–-Day-of-week-0-7-Sunday-0-or-7" class="headerlink" title="| | | | —– Day of week (0 - 7) (Sunday=0 or 7)"></a>| | | | —– Day of week (0 - 7) (Sunday=0 or 7)</h1><h1 id="——-Month-1-12"><a href="#——-Month-1-12" class="headerlink" title="| | | ——- Month (1 - 12)"></a>| | | ——- Month (1 - 12)</h1><h1 id="———-Day-of-month-1-31"><a href="#———-Day-of-month-1-31" class="headerlink" title="| | ——— Day of month (1 - 31)"></a>| | ——— Day of month (1 - 31)</h1><h1 id="———–-Hour-0-23"><a href="#———–-Hour-0-23" class="headerlink" title="| ———– Hour (0 - 23)"></a>| ———– Hour (0 - 23)</h1><h1 id="————-Minute-0-59"><a href="#————-Minute-0-59" class="headerlink" title="————- Minute (0 - 59)"></a>————- Minute (0 - 59)</h1><h3 id="Here’s-my-runGithubTrending-script"><a href="#Here’s-my-runGithubTrending-script" class="headerlink" title="Here’s my runGithubTrending script"></a>Here’s my <strong>runGithubTrending</strong> script</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> <span class="string">'full/path/to/github-trending'</span></div><div class="line">$ yarn start</div><div class="line">$ git add -A</div><div class="line">$ git commit -m <span class="string">"Update"</span></div><div class="line">$ git push origin master</div></pre></td></tr></table></figure>
+<h3 id="So-here’s-how-we-can-runGithubTrending-script-every-3-hours-using-Cron"><a href="#So-here’s-how-we-can-runGithubTrending-script-every-3-hours-using-Cron" class="headerlink" title="So, here’s how we can runGithubTrending script every 3 hours using Cron"></a>So, here’s how we can <strong>runGithubTrending</strong> script every 3 hours using Cron</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ crontab <span class="_">-l</span> | &#123; cat; <span class="built_in">echo</span> <span class="string">"0 */3 * * * runGithubTrending"</span>; &#125; | crontab -</div></pre></td></tr></table></figure>
+<h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -81,8 +138,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -90,9 +147,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -124,6 +185,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

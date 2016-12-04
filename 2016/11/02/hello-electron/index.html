@@ -12,13 +12,21 @@
 <meta property="og:url" content="https://100dayz.js.org/2016/11/02/hello-electron/index.html">
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 2 👾I’m back 💙For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android,">
-<meta property="og:updated_time" content="2016-11-12T13:32:10.029Z">
+<meta property="og:updated_time" content="2016-12-04T14:13:57.696Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello Electron">
 <meta name="twitter:description" content="DAY 2 👾I’m back 💙For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android,">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Hello Electron</title>
@@ -27,57 +35,108 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/03/MD-Desktop-with-Packaging/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/01/hello-world/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/02/hello-electron/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/02/hello-electron/&text=Hello Electron"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/02/hello-electron/&title=Hello Electron"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/02/hello-electron/&is_video=false&description=Hello Electron"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Hello Electron&body=Check out this article: https://100dayz.js.org/2016/11/02/hello-electron/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/02/hello-electron/&title=Hello Electron"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/02/hello-electron/&title=Hello Electron"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/02/hello-electron/&title=Hello Electron"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/02/hello-electron/&title=Hello Electron"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/02/hello-electron/&name=Hello Electron&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-2-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 2 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#For-a-longtime-I-wanted-to-create-a-Desktop-App-which-is-platform-independent-viz-it-can-run-on-different-Operating-Systems-like-Windows-Linux-Mac-Fedora-Open-SUSE-Android-etc"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android, etc..</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Thanx-to-Electron-a-cross-platform-Desktop-App"><span class="toc-number">1.0.2.</span> <span class="toc-text">Thanx to Electron, a cross platform Desktop App.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#According-to-the-Site-—"><span class="toc-number">2.</span> <span class="toc-text">According to the Site —-</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Clone-this-repo"><span class="toc-number">3.</span> <span class="toc-text">(1) Clone this repo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Go-into-the-directory"><span class="toc-number">4.</span> <span class="toc-text">(2) Go into the directory</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Install-all-the-Dependencies"><span class="toc-number">5.</span> <span class="toc-text">(3) Install all the Dependencies</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Start-the-Application"><span class="toc-number">6.</span> <span class="toc-text">(4) Start the Application</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">6.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Hello Electron
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-01T18:30:00.000Z" itemprop="datePublished">2016-11-02</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-2-👾"><a href="#DAY-2-👾" class="headerlink" title="DAY 2 👾"></a>DAY 2 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="For-a-longtime-I-wanted-to-create-a-Desktop-App-which-is-platform-independent-viz-it-can-run-on-different-Operating-Systems-like-Windows-Linux-Mac-Fedora-Open-SUSE-Android-etc"><a href="#For-a-longtime-I-wanted-to-create-a-Desktop-App-which-is-platform-independent-viz-it-can-run-on-different-Operating-Systems-like-Windows-Linux-Mac-Fedora-Open-SUSE-Android-etc" class="headerlink" title="For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android, etc.."></a>For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android, etc..</h4><h3 id="Thanx-to-Electron-a-cross-platform-Desktop-App"><a href="#Thanx-to-Electron-a-cross-platform-Desktop-App" class="headerlink" title="Thanx to Electron, a cross platform Desktop App."></a>Thanx to <a href="http://electron.atom.io/" target="_blank" rel="external">Electron</a>, a cross platform Desktop App.</h3><h1 id="According-to-the-Site-—"><a href="#According-to-the-Site-—" class="headerlink" title="According to the Site —-"></a>According to the Site —-</h1><blockquote><p>If you can build a website, you can build a desktop app. Electron is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS. It takes care of the hard parts so you can focus on the core of your application.</p>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-2-👾"><a href="#DAY-2-👾" class="headerlink" title="DAY 2 👾"></a>DAY 2 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="For-a-longtime-I-wanted-to-create-a-Desktop-App-which-is-platform-independent-viz-it-can-run-on-different-Operating-Systems-like-Windows-Linux-Mac-Fedora-Open-SUSE-Android-etc"><a href="#For-a-longtime-I-wanted-to-create-a-Desktop-App-which-is-platform-independent-viz-it-can-run-on-different-Operating-Systems-like-Windows-Linux-Mac-Fedora-Open-SUSE-Android-etc" class="headerlink" title="For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android, etc.."></a>For a longtime, I wanted to create a Desktop App which is platform independent, viz, it can run on different Operating Systems like Windows, Linux, Mac, Fedora, Open SUSE, Android, etc..</h4><h3 id="Thanx-to-Electron-a-cross-platform-Desktop-App"><a href="#Thanx-to-Electron-a-cross-platform-Desktop-App" class="headerlink" title="Thanx to Electron, a cross platform Desktop App."></a>Thanx to <a href="http://electron.atom.io/" target="_blank" rel="external">Electron</a>, a cross platform Desktop App.</h3><h1 id="According-to-the-Site-—"><a href="#According-to-the-Site-—" class="headerlink" title="According to the Site —-"></a>According to the Site —-</h1><blockquote><p>If you can build a website, you can build a desktop app. Electron is a framework for creating native applications with web technologies like JavaScript, HTML, and CSS. It takes care of the hard parts so you can focus on the core of your application.</p>
 </blockquote>
 <p>Therefore, I created a Simple Desktop App that opens up this <a href="https://100dayz.js.org">Blog’s HomePage</a>. Its very easy app. I just wanted to start a Simple Hello Electron App so I created <a href="https://github.com/deadcoder0904/hello-electron" target="_blank" rel="external">this one</a>.</p>
 <p>To run this app, follow these steps -</p>
-<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ git clone git@github.com:deadcoder<font color="#c00000">0904</font>/hello-electron.git
-</font></pre></figure>
-<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$&#xA0;<font color="#d5e617">cd</font>&#xA0;hello-electron
-</font></pre></figure>
-<h1 id="3-Install-all-the-Dependencies"><a href="#3-Install-all-the-Dependencies" class="headerlink" title="(3) Install all the Dependencies"></a>(3) Install all the Dependencies</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ yarn
-</font></pre></figure>
-<h1 id="4-Start-the-Application"><a href="#4-Start-the-Application" class="headerlink" title="(4) Start the Application"></a>(4) Start the Application</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ yarn&#xA0;<font color="#d5e617">start</font>
-</font></pre></figure>
+<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:deadcoder0904/hello-electron.git</div></pre></td></tr></table></figure>
+<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> hello-electron</div></pre></td></tr></table></figure>
+<h1 id="3-Install-all-the-Dependencies"><a href="#3-Install-all-the-Dependencies" class="headerlink" title="(3) Install all the Dependencies"></a>(3) Install all the Dependencies</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yarn</div></pre></td></tr></table></figure>
+<h1 id="4-Start-the-Application"><a href="#4-Start-the-Application" class="headerlink" title="(4) Start the Application"></a>(4) Start the Application</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yarn start</div></pre></td></tr></table></figure>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -85,8 +144,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -94,9 +153,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -128,6 +191,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

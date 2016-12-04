@@ -15,14 +15,22 @@
 <meta property="og:image" content="http://imgur.com/nGqh12y.png">
 <meta property="og:image" content="http://imgur.com/063HJ08.png">
 <meta property="og:image" content="http://imgur.com/FzNraIM.png">
-<meta property="og:updated_time" content="2016-11-14T17:51:09.683Z">
+<meta property="og:updated_time" content="2016-12-04T14:12:21.948Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Gists">
 <meta name="twitter:description" content="DAY 5 👾I’m back 💙Today I created Github Gists Website. I’ve created this app to find Gists of any user as the Github interface has a ugly UX.The live application can be found here.It gives all the P">
 <meta name="twitter:image" content="http://imgur.com/nGqh12y.png">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Github Gists</title>
@@ -31,57 +39,109 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/06/Github-Emoji-List/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/04/CountDown-Desktop/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/05/Github-Gists/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/05/Github-Gists/&text=Github Gists"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/05/Github-Gists/&title=Github Gists"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/05/Github-Gists/&is_video=false&description=Github Gists"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Github Gists&body=Check out this article: https://100dayz.js.org/2016/11/05/Github-Gists/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/05/Github-Gists/&title=Github Gists"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/05/Github-Gists/&title=Github Gists"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/05/Github-Gists/&title=Github Gists"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/05/Github-Gists/&title=Github Gists"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/05/Github-Gists/&name=Github Gists&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-5-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 5 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-Github-Gists-Website-I’ve-created-this-app-to-find-Gists-of-any-user-as-the-Github-interface-has-a-ugly-UX"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created Github Gists Website. I’ve created this app to find Gists of any user as the Github interface has a ugly UX.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-live-application-can-be-found-here"><span class="toc-number">1.0.2.</span> <span class="toc-text">The live application can be found here.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-App-is-very-simple-screenshot-provided-below"><span class="toc-number">1.0.3.</span> <span class="toc-text">The App is very simple, screenshot provided below</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-Github-Gists-of-Any-User"><span class="toc-number">1.1.</span> <span class="toc-text">Find Github Gists of Any User</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-User-Not-Found"><span class="toc-number">1.1.1.</span> <span class="toc-text">(1) User Not Found</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-User-Has-No-Public-Gists"><span class="toc-number">1.1.2.</span> <span class="toc-text">(2) User Has No Public Gists</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-All-Public-Gists"><span class="toc-number">1.1.3.</span> <span class="toc-text">(3) All Public Gists</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">1.2.</span> <span class="toc-text">Usage</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Clone-this-repo"><span class="toc-number">2.</span> <span class="toc-text">(1) Clone this repo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Go-into-the-directory"><span class="toc-number">3.</span> <span class="toc-text">(2) Go into the directory</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Open-index-html"><span class="toc-number">4.</span> <span class="toc-text">(3) Open index.html</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">4.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Github Gists
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-04T18:30:00.000Z" itemprop="datePublished">2016-11-05</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-5-👾"><a href="#DAY-5-👾" class="headerlink" title="DAY 5 👾"></a>DAY 5 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Gists-Website-I’ve-created-this-app-to-find-Gists-of-any-user-as-the-Github-interface-has-a-ugly-UX"><a href="#Today-I-created-Github-Gists-Website-I’ve-created-this-app-to-find-Gists-of-any-user-as-the-Github-interface-has-a-ugly-UX" class="headerlink" title="Today I created Github Gists Website. I’ve created this app to find Gists of any user as the Github interface has a ugly UX."></a>Today I created Github Gists Website. I’ve created this app to find Gists of any user as the Github interface has a ugly UX.</h4><h3 id="The-live-application-can-be-found-here"><a href="#The-live-application-can-be-found-here" class="headerlink" title="The live application can be found here."></a><a href="https://deadcoder0904.github.io/github-user-public-gists" target="_blank" rel="external">The live application can be found here</a>.</h3><p>It gives all the Public Gists of a Github User. It uses Github API. It is my very first experiment with functional CSS. I’ve used <a href="https://tachyons.io" target="_blank" rel="external">Tachyons</a> for this project. It is used to create modular, immutable, resuable &amp; scalable CSS. The web app loads up in very less amount of time as compared to any other CSS Framework. Tachyons concentrates on small, functional modules. One module does only one thing, and it does it very well. I’ve made this web app without even touching the CSS file. The CSS file in the repo is of the HTML5 Boilerplate. </p>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-5-👾"><a href="#DAY-5-👾" class="headerlink" title="DAY 5 👾"></a>DAY 5 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Gists-Website-I’ve-created-this-app-to-find-Gists-of-any-user-as-the-Github-interface-has-a-ugly-UX"><a href="#Today-I-created-Github-Gists-Website-I’ve-created-this-app-to-find-Gists-of-any-user-as-the-Github-interface-has-a-ugly-UX" class="headerlink" title="Today I created Github Gists Website. I’ve created this app to find Gists of any user as the Github interface has a ugly UX."></a>Today I created Github Gists Website. I’ve created this app to find Gists of any user as the Github interface has a ugly UX.</h4><h3 id="The-live-application-can-be-found-here"><a href="#The-live-application-can-be-found-here" class="headerlink" title="The live application can be found here."></a><a href="https://deadcoder0904.github.io/github-user-public-gists" target="_blank" rel="external">The live application can be found here</a>.</h3><p>It gives all the Public Gists of a Github User. It uses Github API. It is my very first experiment with functional CSS. I’ve used <a href="https://tachyons.io" target="_blank" rel="external">Tachyons</a> for this project. It is used to create modular, immutable, resuable &amp; scalable CSS. The web app loads up in very less amount of time as compared to any other CSS Framework. Tachyons concentrates on small, functional modules. One module does only one thing, and it does it very well. I’ve made this web app without even touching the CSS file. The CSS file in the repo is of the HTML5 Boilerplate. </p>
 <h3 id="The-App-is-very-simple-screenshot-provided-below"><a href="#The-App-is-very-simple-screenshot-provided-below" class="headerlink" title="The App is very simple, screenshot provided below"></a>The App is very simple, screenshot provided below</h3><h2 id="Find-Github-Gists-of-Any-User"><a href="#Find-Github-Gists-of-Any-User" class="headerlink" title="Find Github Gists of Any User"></a>Find Github Gists of Any User</h2><h3 id="1-User-Not-Found"><a href="#1-User-Not-Found" class="headerlink" title="(1) User Not Found"></a>(1) User Not Found</h3><p><img src="http://imgur.com/nGqh12y.png" alt="404"></p>
 <h3 id="2-User-Has-No-Public-Gists"><a href="#2-User-Has-No-Public-Gists" class="headerlink" title="(2) User Has No Public Gists"></a>(2) User Has No Public Gists</h3><p><img src="http://imgur.com/063HJ08.png" alt="No Public Gists"></p>
 <h3 id="3-All-Public-Gists"><a href="#3-All-Public-Gists" class="headerlink" title="(3) All Public Gists"></a>(3) All Public Gists</h3><p><img src="http://imgur.com/FzNraIM.png" alt="Public Gists"></p>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>To run this app, follow these steps -</p>
-<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ git clone git@github.com:deadcoder<font color="#c00000">0904</font>/github-user-public-gists.git
-</font></pre></figure>
-<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$&#xA0;<font color="#d5e617">cd</font>&#xA0;github-user-public-gists
-</font></pre></figure>
-<h1 id="3-Open-index-html"><a href="#3-Open-index-html" class="headerlink" title="(3) Open index.html"></a>(3) Open <code>index.html</code></h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ google-chrome index.html
-</font></pre></figure>
+<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:deadcoder0904/github-user-public-gists.git</div></pre></td></tr></table></figure>
+<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> github-user-public-gists</div></pre></td></tr></table></figure>
+<h1 id="3-Open-index-html"><a href="#3-Open-index-html" class="headerlink" title="(3) Open index.html"></a>(3) Open <code>index.html</code></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ google-chrome index.html</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/deadcoder0904/github-user-public-gists" target="_blank" rel="external">Final Application Here</a></p>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -89,8 +149,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -98,9 +158,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -132,6 +196,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

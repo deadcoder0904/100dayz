@@ -12,13 +12,21 @@
 <meta property="og:url" content="https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/index.html">
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 10 👾I’m back 💙Exam days are ahead of me &amp;amp; I don’t have a hard copy to read from &amp;amp; ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in">
-<meta property="og:updated_time" content="2016-11-22T15:34:49.796Z">
+<meta property="og:updated_time" content="2016-12-04T14:43:05.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Sort Files in a Directory and Number Them">
 <meta name="twitter:description" content="DAY 10 👾I’m back 💙Exam days are ahead of me &amp;amp; I don’t have a hard copy to read from &amp;amp; ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Sort Files in a Directory and Number Them</title>
@@ -27,83 +35,103 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/11/Run-Github-Trending-Every-3-hours-and-Push-to-Github/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/09/Github-Trending-Web-Scraper/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&text=Sort Files in a Directory and Number Them"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&title=Sort Files in a Directory and Number Them"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&is_video=false&description=Sort Files in a Directory and Number Them"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Sort Files in a Directory and Number Them&body=Check out this article: https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&title=Sort Files in a Directory and Number Them"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&title=Sort Files in a Directory and Number Them"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&title=Sort Files in a Directory and Number Them"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&title=Sort Files in a Directory and Number Them"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/&name=Sort Files in a Directory and Number Them&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-10-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 10 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Exam-days-are-ahead-of-me-amp-I-don’t-have-a-hard-copy-to-read-from-amp-ebooks-for-Digital-Signal-Processing-DSP-suck-atleast-those-I-have-So-today-I-clicked-some-pics-in-my-phone-amp-as-per-the-naming-convention-of-my-phone-they-are-long-strings-like-IMG-20164144090-jpg-amp-so-on…-Now-I-want-to-sort-them-all-amp-number-them-so-that-final-result-is-1-jpg-I-have-2-languages-for-automating-this-task-BASH-amp-PYTHON-I’ll-go-with-PYTHON-as-this-usecase-is-more-suitable-for-it"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Exam days are ahead of me & I don’t have a hard copy to read from & ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in my phone & as per the naming convention of my phone they are long strings like IMG_20164144090.jpg & so on… Now I want to sort them all & number them so that final result is 1.jpg. I have 2 languages for automating this task BASH & PYTHON. I’ll go with PYTHON as this usecase is more suitable for it.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Here’s-the-final-Python-Script"><span class="toc-number">1.0.2.</span> <span class="toc-text">Here’s the final Python Script</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Firstly-I’ll-import-all-the-modules-I-need-i-e-os-module-amp-shutil-module"><span class="toc-number">1.0.2.1.</span> <span class="toc-text">Firstly, I’ll import all the modules I need, i.e, os module & shutil module</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#os-module"><span class="toc-number">1.1.</span> <span class="toc-text">os module</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#sh-module"><span class="toc-number">1.2.</span> <span class="toc-text">sh module</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Following-is-the-Code-with-Explanation-above-each-line"><span class="toc-number">2.</span> <span class="toc-text">Following is the Code with Explanation above each line</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#I-wish-I-would’ve-done-this-before-as-it-would’ve-helped-me-in-my-Previous-Semesters-Hope-it-helps-u"><span class="toc-number">3.</span> <span class="toc-text">I wish I would’ve done this before as it would’ve helped me in my Previous Semesters. Hope it helps u.</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">3.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Sort Files in a Directory and Number Them
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-09T18:30:00.000Z" itemprop="datePublished">2016-11-10</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
-
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-10-👾"><a href="#DAY-10-👾" class="headerlink" title="DAY 10 👾"></a>DAY 10 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Exam-days-are-ahead-of-me-amp-I-don’t-have-a-hard-copy-to-read-from-amp-ebooks-for-Digital-Signal-Processing-DSP-suck-atleast-those-I-have-So-today-I-clicked-some-pics-in-my-phone-amp-as-per-the-naming-convention-of-my-phone-they-are-long-strings-like-IMG-20164144090-jpg-amp-so-on…-Now-I-want-to-sort-them-all-amp-number-them-so-that-final-result-is-1-jpg-I-have-2-languages-for-automating-this-task-BASH-amp-PYTHON-I’ll-go-with-PYTHON-as-this-usecase-is-more-suitable-for-it"><a href="#Exam-days-are-ahead-of-me-amp-I-don’t-have-a-hard-copy-to-read-from-amp-ebooks-for-Digital-Signal-Processing-DSP-suck-atleast-those-I-have-So-today-I-clicked-some-pics-in-my-phone-amp-as-per-the-naming-convention-of-my-phone-they-are-long-strings-like-IMG-20164144090-jpg-amp-so-on…-Now-I-want-to-sort-them-all-amp-number-them-so-that-final-result-is-1-jpg-I-have-2-languages-for-automating-this-task-BASH-amp-PYTHON-I’ll-go-with-PYTHON-as-this-usecase-is-more-suitable-for-it" class="headerlink" title="Exam days are ahead of me &amp; I don’t have a hard copy to read from &amp; ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in my phone &amp; as per the naming convention of my phone they are long strings like IMG_20164144090.jpg &amp; so on… Now I want to sort them all &amp; number them so that final result is 1.jpg. I have 2 languages for automating this task BASH &amp; PYTHON. I’ll go with PYTHON as this usecase is more suitable for it."></a>Exam days are ahead of me &amp; I don’t have a hard copy to read from &amp; ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in my phone &amp; as per the naming convention of my phone they are long strings like <code>IMG_20164144090.jpg</code> &amp; so on… Now I want to sort them all &amp; number them so that final result is <code>1.jpg</code>. I have 2 languages for automating this task <code>BASH</code> &amp; <code>PYTHON</code>. I’ll go with <code>PYTHON</code> as this usecase is more suitable for it.</h4><h3 id="Here’s-the-final-Python-Script"><a href="#Here’s-the-final-Python-Script" class="headerlink" title="Here’s the final Python Script"></a>Here’s the final <a href="https://github.com/deadcoder0904/personal-bash-scripts/blob/master/sortAndOrderFiles.py" target="_blank" rel="external">Python Script</a></h3><h4 id="Firstly-I’ll-import-all-the-modules-I-need-i-e-os-module-amp-shutil-module"><a href="#Firstly-I’ll-import-all-the-modules-I-need-i-e-os-module-amp-shutil-module" class="headerlink" title="Firstly, I’ll import all the modules I need, i.e, os module &amp; shutil module"></a>Firstly, I’ll import all the modules I need, i.e, <code>os</code> module &amp; <code>shutil</code> module</h4><h2 id="os-module-to-change-directories-get-files-in-the-directory-amp-to-get-current-working-directory"><a href="#os-module-to-change-directories-get-files-in-the-directory-amp-to-get-current-working-directory" class="headerlink" title="os module to change directories, get files in the directory &amp; to get current working directory"></a><code>os</code> module to change directories, get files in the directory &amp; to get current working directory</h2><h2 id="sh-module-to-copy-file-from-one-directory-to-another-directory"><a href="#sh-module-to-copy-file-from-one-directory-to-another-directory" class="headerlink" title="sh module to copy file from one directory to another directory"></a><code>sh</code> module to copy file from one directory to another directory</h2><h1 id="Following-is-the-Code-with-Explanation-above-each-line"><a href="#Following-is-the-Code-with-Explanation-above-each-line" class="headerlink" title="Following is the Code with Explanation above each line"></a>Following is the Code with Explanation above each line</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">&#xA0;1&#xA0;</font></span><font color="#2277cc"># Import `os` &amp; `shutil` module</font>
-<span id="L2"><font color="#d5e617">&#xA0;2&#xA0;</font></span>import os, shutil
-<span id="L3"><font color="#d5e617">&#xA0;3&#xA0;</font></span>
-<span id="L4"><font color="#d5e617">&#xA0;4&#xA0;</font></span><font color="#2277cc"># Get Current Working Directory</font>
-<span id="L5"><font color="#d5e617">&#xA0;5&#xA0;</font></span>search_dir = os.getcwd()
-<span id="L6"><font color="#d5e617">&#xA0;6&#xA0;</font></span>
-<span id="L7"><font color="#d5e617">&#xA0;7&#xA0;</font></span><font color="#2277cc"># Goto that Directory</font>
-<span id="L8"><font color="#d5e617">&#xA0;8&#xA0;</font></span>os.chdir(search_dir)
-<span id="L9"><font color="#d5e617">&#xA0;9&#xA0;</font></span>
-<span id="L10"><font color="#d5e617">10&#xA0;</font></span><font color="#2277cc"># List Files in the Directory, don&apos;t list Subdirectories</font>
-<span id="L11"><font color="#d5e617">11&#xA0;</font></span>files = filter(os.path.isfile, os.listdir(search_dir))
-<span id="L12"><font color="#d5e617">12&#xA0;</font></span>
-<span id="L13"><font color="#d5e617">13&#xA0;</font></span><font color="#2277cc"># For each file, store it in an `files` list</font>
-<span id="L14"><font color="#d5e617">14&#xA0;</font></span>files = [os.path.join(search_dir, f) for f in files]
-<span id="L15"><font color="#d5e617">15&#xA0;</font></span>
-<span id="L16"><font color="#d5e617">16&#xA0;</font></span><font color="#2277cc"># Sort all files according to the `date`&#xA0;</font>
-<span id="L17"><font color="#d5e617">17&#xA0;</font></span>files.sort(key=lambda x: os.path.getmtime(x))
-<span id="L18"><font color="#d5e617">18&#xA0;</font></span>
-<span id="L19"><font color="#d5e617">19&#xA0;</font></span><font color="#2277cc"># Directory name to put your sorted files in</font>
-<span id="L20"><font color="#d5e617">20&#xA0;</font></span>dir =&#xA0;<font color="#c00000">&quot;sorted&quot;</font>
-<span id="L21"><font color="#d5e617">21&#xA0;</font></span>
-<span id="L22"><font color="#d5e617">22&#xA0;</font></span><font color="#2277cc"># Create that directory</font>
-<span id="L23"><font color="#d5e617">23&#xA0;</font></span>os.system(<font color="#c00000">&quot;sudo mkdir -p &quot;</font>&#xA0;+ dir)
-<span id="L24"><font color="#d5e617">24&#xA0;</font></span>
-<span id="L25"><font color="#d5e617">25&#xA0;</font></span><font color="#2277cc"># Extension of the file, mine are images</font>
-<span id="L26"><font color="#d5e617">26&#xA0;</font></span>extension=<font color="#c00000">&quot;.jpg&quot;</font>
-<span id="L27"><font color="#d5e617">27&#xA0;</font></span>
-<span id="L28"><font color="#d5e617">28&#xA0;</font></span><font color="#2277cc"># Starting name</font>
-<span id="L29"><font color="#d5e617">29&#xA0;</font></span>i=1
-<span id="L30"><font color="#d5e617">30&#xA0;</font></span>
-<span id="L31"><font color="#d5e617">31&#xA0;</font></span><font color="#2277cc"># For every file copy it in sorted directory</font>
-<span id="L32"><font color="#d5e617">32&#xA0;</font></span>for filename in files:
-<span id="L33"><font color="#d5e617">33&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;destination =&#xA0;<font color="#c00000">&quot;sorted/&quot;</font>&#xA0;+ str(i) + extension
-<span id="L34"><font color="#d5e617">34&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;shutil.copy(filename,destination)
-<span id="L35"><font color="#d5e617">35&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;i = i + 1
-<span id="L36"><font color="#d5e617">36&#xA0;</font></span>print&#xA0;<font color="#c00000">&quot;Copied all files to &apos;sorted&apos; directory&quot;</font>
-<span id="L37"><font color="#d5e617">37&#xA0;</font></span><font color="#2277cc"># End of Program&#xA0;</font>
-</font></pre></figure>
-<h1 id="I-wish-I-would’ve-done-this-before-as-it-would’ve-helped-me-in-my-Previous-Semesters-Hope-it-helps-u"><a href="#I-wish-I-would’ve-done-this-before-as-it-would’ve-helped-me-in-my-Previous-Semesters-Hope-it-helps-u" class="headerlink" title="I wish I would’ve done this before as it would’ve helped me in my Previous Semesters. Hope it helps u."></a>I wish I would’ve done this before as it would’ve helped me in my Previous Semesters. Hope it helps u.</h1><h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
     </div>
-  </article>
+  </header>
   
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-10-👾"><a href="#DAY-10-👾" class="headerlink" title="DAY 10 👾"></a>DAY 10 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Exam-days-are-ahead-of-me-amp-I-don’t-have-a-hard-copy-to-read-from-amp-ebooks-for-Digital-Signal-Processing-DSP-suck-atleast-those-I-have-So-today-I-clicked-some-pics-in-my-phone-amp-as-per-the-naming-convention-of-my-phone-they-are-long-strings-like-IMG-20164144090-jpg-amp-so-on…-Now-I-want-to-sort-them-all-amp-number-them-so-that-final-result-is-1-jpg-I-have-2-languages-for-automating-this-task-BASH-amp-PYTHON-I’ll-go-with-PYTHON-as-this-usecase-is-more-suitable-for-it"><a href="#Exam-days-are-ahead-of-me-amp-I-don’t-have-a-hard-copy-to-read-from-amp-ebooks-for-Digital-Signal-Processing-DSP-suck-atleast-those-I-have-So-today-I-clicked-some-pics-in-my-phone-amp-as-per-the-naming-convention-of-my-phone-they-are-long-strings-like-IMG-20164144090-jpg-amp-so-on…-Now-I-want-to-sort-them-all-amp-number-them-so-that-final-result-is-1-jpg-I-have-2-languages-for-automating-this-task-BASH-amp-PYTHON-I’ll-go-with-PYTHON-as-this-usecase-is-more-suitable-for-it" class="headerlink" title="Exam days are ahead of me &amp; I don’t have a hard copy to read from &amp; ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in my phone &amp; as per the naming convention of my phone they are long strings like IMG_20164144090.jpg &amp; so on… Now I want to sort them all &amp; number them so that final result is 1.jpg. I have 2 languages for automating this task BASH &amp; PYTHON. I’ll go with PYTHON as this usecase is more suitable for it."></a>Exam days are ahead of me &amp; I don’t have a hard copy to read from &amp; ebooks for Digital Signal Processing (DSP) suck, atleast those I have. So, today I clicked some pics in my phone &amp; as per the naming convention of my phone they are long strings like <code>IMG_20164144090.jpg</code> &amp; so on… Now I want to sort them all &amp; number them so that final result is <code>1.jpg</code>. I have 2 languages for automating this task <code>BASH</code> &amp; <code>PYTHON</code>. I’ll go with <code>PYTHON</code> as this usecase is more suitable for it.</h4><h3 id="Here’s-the-final-Python-Script"><a href="#Here’s-the-final-Python-Script" class="headerlink" title="Here’s the final Python Script"></a>Here’s the final <a href="https://github.com/deadcoder0904/personal-bash-scripts/blob/master/sortAndOrderFiles.py" target="_blank" rel="external">Python Script</a></h3><h4 id="Firstly-I’ll-import-all-the-modules-I-need-i-e-os-module-amp-shutil-module"><a href="#Firstly-I’ll-import-all-the-modules-I-need-i-e-os-module-amp-shutil-module" class="headerlink" title="Firstly, I’ll import all the modules I need, i.e, os module &amp; shutil module"></a>Firstly, I’ll import all the modules I need, i.e, <code>os</code> module &amp; <code>shutil</code> module</h4><h2 id="os-module"><a href="#os-module" class="headerlink" title="os module"></a><code>os</code> module</h2><p><code>os</code> module to change directories, get files in the directory &amp; to get current working directory</p>
+<h2 id="sh-module"><a href="#sh-module" class="headerlink" title="sh module"></a><code>sh</code> module</h2><p><code>sh</code> module to copy file from one directory to another directory</p>
+<h1 id="Following-is-the-Code-with-Explanation-above-each-line"><a href="#Following-is-the-Code-with-Explanation-above-each-line" class="headerlink" title="Following is the Code with Explanation above each line"></a>Following is the Code with Explanation above each line</h1><figure class="highlight python"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># Import `os` &amp; `shutil` module</span></div><div class="line"><span class="keyword">import</span> os, shutil</div><div class="line"></div><div class="line"><span class="comment"># Get Current Working Directory</span></div><div class="line">search_dir = os.getcwd()</div><div class="line"></div><div class="line"><span class="comment"># Goto that Directory</span></div><div class="line">os.chdir(search_dir)</div><div class="line"></div><div class="line"><span class="comment"># List Files in the Directory, don't list Subdirectories</span></div><div class="line">files = filter(os.path.isfile, os.listdir(search_dir))</div><div class="line"></div><div class="line"><span class="comment"># For each file, store it in an `files` list</span></div><div class="line">files = [os.path.join(search_dir, f) <span class="keyword">for</span> f <span class="keyword">in</span> files]</div><div class="line"></div><div class="line"><span class="comment"># Sort all files according to the `date` </span></div><div class="line">files.sort(key=<span class="keyword">lambda</span> x: os.path.getmtime(x))</div><div class="line"></div><div class="line"><span class="comment"># Directory name to put your sorted files in</span></div><div class="line">dir = <span class="string">"sorted"</span></div><div class="line"></div><div class="line"><span class="comment"># Create that directory</span></div><div class="line">os.system(<span class="string">"sudo mkdir -p "</span> + dir)</div><div class="line"></div><div class="line"><span class="comment"># Extension of the file, mine are images</span></div><div class="line">extension=<span class="string">".jpg"</span></div><div class="line"></div><div class="line"><span class="comment"># Starting name</span></div><div class="line">i=<span class="number">1</span></div><div class="line"></div><div class="line"><span class="comment"># For every file copy it in sorted directory</span></div><div class="line"><span class="keyword">for</span> filename <span class="keyword">in</span> files:</div><div class="line">	destination = <span class="string">"sorted/"</span> + str(i) + extension</div><div class="line">	shutil.copy(filename,destination)</div><div class="line">	i = i + <span class="number">1</span></div><div class="line"><span class="keyword">print</span> <span class="string">"Copied all files to 'sorted' directory"</span></div><div class="line"><span class="comment"># End of Program</span></div></pre></td></tr></table></figure>
+<h1 id="I-wish-I-would’ve-done-this-before-as-it-would’ve-helped-me-in-my-Previous-Semesters-Hope-it-helps-u"><a href="#I-wish-I-would’ve-done-this-before-as-it-would’ve-helped-me-in-my-Previous-Semesters-Hope-it-helps-u" class="headerlink" title="I wish I would’ve done this before as it would’ve helped me in my Previous Semesters. Hope it helps u."></a>I wish I would’ve done this before as it would’ve helped me in my Previous Semesters. Hope it helps u.</h1><h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -111,8 +139,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -120,9 +148,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -154,6 +186,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

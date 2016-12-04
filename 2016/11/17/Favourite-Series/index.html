@@ -6,21 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="DAY 17 👾I’m back 💙Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.I’ve also created simple ES7 compatible Boilerplate,to require files &amp;amp">
+    <meta name="description" content="DAY 17 👾I’m back 💙Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.ES7 BoilerplateI’ve also created simple ES7 compatible Boilerplate,to req">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Favourite Series">
 <meta property="og:url" content="https://100dayz.js.org/2016/11/17/Favourite-Series/index.html">
 <meta property="og:site_name" content="A2K">
-<meta property="og:description" content="DAY 17 👾I’m back 💙Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.I’ve also created simple ES7 compatible Boilerplate,to require files &amp;amp">
+<meta property="og:description" content="DAY 17 👾I’m back 💙Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.ES7 BoilerplateI’ve also created simple ES7 compatible Boilerplate,to req">
 <meta property="og:image" content="http://imgur.com/wCDMQ7K.png">
-<meta property="og:updated_time" content="2016-11-30T16:50:58.926Z">
+<meta property="og:updated_time" content="2016-12-04T14:49:01.207Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Favourite Series">
-<meta name="twitter:description" content="DAY 17 👾I’m back 💙Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.I’ve also created simple ES7 compatible Boilerplate,to require files &amp;amp">
+<meta name="twitter:description" content="DAY 17 👾I’m back 💙Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.ES7 BoilerplateI’ve also created simple ES7 compatible Boilerplate,to req">
 <meta name="twitter:image" content="http://imgur.com/wCDMQ7K.png">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Favourite Series</title>
@@ -29,55 +37,107 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/18/Todo-Without-HTTP-Requests/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/16/Favourite-Movies/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/17/Favourite-Series/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&text=Favourite Series"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&title=Favourite Series"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&is_video=false&description=Favourite Series"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Favourite Series&body=Check out this article: https://100dayz.js.org/2016/11/17/Favourite-Series/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&title=Favourite Series"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&title=Favourite Series"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&title=Favourite Series"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&title=Favourite Series"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/17/Favourite-Series/&name=Favourite Series&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-17-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 17 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-my-Favourite-Series-Site-I-have-used-OMDB-API-to-get-all-the-data-about-various-TV-Series"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ES7-Boilerplate"><span class="toc-number">1.1.</span> <span class="toc-text">ES7 Boilerplate</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Clone-this-repo"><span class="toc-number">2.</span> <span class="toc-text">(1) Clone this repo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Go-into-the-directory"><span class="toc-number">3.</span> <span class="toc-text">(2) Go into the directory</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Install-all-the-Dependencies"><span class="toc-number">4.</span> <span class="toc-text">(3) Install all the Dependencies</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Build-the-Application"><span class="toc-number">5.</span> <span class="toc-text">(4) Build the Application</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#5-Open-index-html-in-your-favourite-browser"><span class="toc-number">6.</span> <span class="toc-text">(5) Open index.html in your favourite browser</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Demo"><span class="toc-number">7.</span> <span class="toc-text">Demo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Screenshot"><span class="toc-number">8.</span> <span class="toc-text">Screenshot</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Code"><span class="toc-number">9.</span> <span class="toc-text">Code</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">9.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Favourite Series
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-16T18:30:00.000Z" itemprop="datePublished">2016-11-17</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-17-👾"><a href="#DAY-17-👾" class="headerlink" title="DAY 17 👾"></a>DAY 17 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-my-Favourite-Series-Site-I-have-used-OMDB-API-to-get-all-the-data-about-various-TV-Series"><a href="#Today-I-created-my-Favourite-Series-Site-I-have-used-OMDB-API-to-get-all-the-data-about-various-TV-Series" class="headerlink" title="Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series."></a>Today I created my Favourite Series Site. I have used <a href="https://omdbapi.com/" target="_blank" rel="external">OMDB API</a> to get all the data about various TV Series.</h4><h2 id="I’ve-also-created-simple-ES7-compatible-Boilerplate-to-require-files-amp-to-use-various-new-ES7-methods-which-can-be-found-here"><a href="#I’ve-also-created-simple-ES7-compatible-Boilerplate-to-require-files-amp-to-use-various-new-ES7-methods-which-can-be-found-here" class="headerlink" title="I’ve also created simple ES7 compatible Boilerplate,to require files &amp; to use various new ES7 methods, which can be found here."></a>I’ve also created simple ES7 compatible Boilerplate,to <code>require</code> files &amp; to use various new ES7 methods, which can be found <a href="https://github.com/deadcoder0904/template-scripts/tree/master/HTML5-CSS3-Jquery-Tachyons-ES7/" target="_blank" rel="external">here</a>.</h2><p>To run this app, follow these steps -</p>
-<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ git clone git@github.com:deadcoder<font color="#c00000">0904</font>/favourite-series.git
-</font></pre></figure>
-<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$&#xA0;<font color="#d5e617">cd</font>&#xA0;favourite-series
-</font></pre></figure>
-<h1 id="3-Install-all-the-Dependencies"><a href="#3-Install-all-the-Dependencies" class="headerlink" title="(3) Install all the Dependencies"></a>(3) Install all the Dependencies</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ yarn
-</font></pre></figure>
-<h1 id="4-Build-the-Application"><a href="#4-Build-the-Application" class="headerlink" title="(4) Build the Application"></a>(4) Build the Application</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ yarn&#xA0;<font color="#d5e617">start</font>
-</font></pre></figure>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-17-👾"><a href="#DAY-17-👾" class="headerlink" title="DAY 17 👾"></a>DAY 17 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-my-Favourite-Series-Site-I-have-used-OMDB-API-to-get-all-the-data-about-various-TV-Series"><a href="#Today-I-created-my-Favourite-Series-Site-I-have-used-OMDB-API-to-get-all-the-data-about-various-TV-Series" class="headerlink" title="Today I created my Favourite Series Site. I have used OMDB API to get all the data about various TV Series."></a>Today I created my Favourite Series Site. I have used <a href="https://omdbapi.com/" target="_blank" rel="external">OMDB API</a> to get all the data about various TV Series.</h4><h2 id="ES7-Boilerplate"><a href="#ES7-Boilerplate" class="headerlink" title="ES7 Boilerplate"></a>ES7 Boilerplate</h2><p>I’ve also created simple ES7 compatible Boilerplate,to <code>require</code> files &amp; to use various new ES7 methods, which can be found <a href="https://github.com/deadcoder0904/template-scripts/tree/master/HTML5-CSS3-Jquery-Tachyons-ES7/" target="_blank" rel="external">here</a>.</p>
+<p>To run this app, follow these steps -</p>
+<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:deadcoder0904/favourite-series.git</div></pre></td></tr></table></figure>
+<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> favourite-series</div></pre></td></tr></table></figure>
+<h1 id="3-Install-all-the-Dependencies"><a href="#3-Install-all-the-Dependencies" class="headerlink" title="(3) Install all the Dependencies"></a>(3) Install all the Dependencies</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yarn</div></pre></td></tr></table></figure>
+<h1 id="4-Build-the-Application"><a href="#4-Build-the-Application" class="headerlink" title="(4) Build the Application"></a>(4) Build the Application</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yarn start</div></pre></td></tr></table></figure>
 <h1 id="5-Open-index-html-in-your-favourite-browser"><a href="#5-Open-index-html-in-your-favourite-browser" class="headerlink" title="(5) Open index.html in your favourite browser"></a>(5) Open <code>index.html</code> in your favourite browser</h1><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a><a href="https://deadcoder0904.github.io/favourite-series/" target="_blank" rel="external">Demo</a></h1><h1 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h1><p><img src="http://imgur.com/wCDMQ7K.png" alt="Awesome Series"></p>
 <h1 id="Code"><a href="#Code" class="headerlink" title="Code"></a><a href="https://github.com/deadcoder0904/favourite-series/" target="_blank" rel="external">Code</a></h1><h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -85,8 +145,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -94,9 +154,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -128,6 +192,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

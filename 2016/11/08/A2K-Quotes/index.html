@@ -13,14 +13,22 @@
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 8 👾I’m back 💙Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes &amp;amp; if u know me personally, you’ll hear one of them soon enough.If">
 <meta property="og:image" content="http://imgur.com/ai1A1r5.png">
-<meta property="og:updated_time" content="2016-11-17T16:27:03.155Z">
+<meta property="og:updated_time" content="2016-12-04T14:07:56.083Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="A2K Quotes">
 <meta name="twitter:description" content="DAY 8 👾I’m back 💙Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes &amp;amp; if u know me personally, you’ll hear one of them soon enough.If">
 <meta name="twitter:image" content="http://imgur.com/ai1A1r5.png">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>A2K Quotes</title>
@@ -29,50 +37,102 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/09/Github-Trending-Web-Scraper/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/07/Github-Random-Emoji-Generator/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/08/A2K-Quotes/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&text=A2K Quotes"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&title=A2K Quotes"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&is_video=false&description=A2K Quotes"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=A2K Quotes&body=Check out this article: https://100dayz.js.org/2016/11/08/A2K-Quotes/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&title=A2K Quotes"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&title=A2K Quotes"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&title=A2K Quotes"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&title=A2K Quotes"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/08/A2K-Quotes/&name=A2K Quotes&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-8-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 8 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Today-I-created-a-fun-Web-App-of-my-awesome-collection-of-Quotes-I’ve-created-this-app-to-remember-some-Quotes-amp-if-u-know-me-personally-you’ll-hear-one-of-them-soon-enough"><span class="toc-number">1.0.2.</span> <span class="toc-text">Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes & if u know me personally, you’ll hear one of them soon enough.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#If-I-need-to-add-a-new-Quote-I-manually-don’t-have-to-edit-the-HTML-or-JS-file-I-just-need-to-add-2-lines-to-the-JSON-file-amp-the-new-quote-will-appear-on-the-browser-like-a-charm"><span class="toc-number">1.0.3.</span> <span class="toc-text">If I need to add a new Quote I manually don’t have to edit the HTML or JS file, I just need to add 2 lines to the JSON file & the new quote will appear on the browser like a charm.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#If-u-find-an-awesome-Quote-send-me-a-pull-request-here"><span class="toc-number">1.0.4.</span> <span class="toc-text">If u find an awesome Quote, send me a pull request here</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Awesome-Curated-Quotes-by-A2K"><span class="toc-number">1.1.</span> <span class="toc-text">Awesome Curated Quotes by A2K</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Screenshots"><span class="toc-number">2.</span> <span class="toc-text">Screenshots</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">2.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         A2K Quotes
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-07T18:30:00.000Z" itemprop="datePublished">2016-11-08</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-8-👾"><a href="#DAY-8-👾" class="headerlink" title="DAY 8 👾"></a>DAY 8 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-a-fun-Web-App-of-my-awesome-collection-of-Quotes-I’ve-created-this-app-to-remember-some-Quotes-amp-if-u-know-me-personally-you’ll-hear-one-of-them-soon-enough"><a href="#Today-I-created-a-fun-Web-App-of-my-awesome-collection-of-Quotes-I’ve-created-this-app-to-remember-some-Quotes-amp-if-u-know-me-personally-you’ll-hear-one-of-them-soon-enough" class="headerlink" title="Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes &amp; if u know me personally, you’ll hear one of them soon enough."></a>Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes &amp; if u know me personally, you’ll hear one of them soon enough.</h4><h4 id="If-I-need-to-add-a-new-Quote-I-manually-don’t-have-to-edit-the-HTML-or-JS-file-I-just-need-to-add-2-lines-to-the-JSON-file-amp-the-new-quote-will-appear-on-the-browser-like-a-charm"><a href="#If-I-need-to-add-a-new-Quote-I-manually-don’t-have-to-edit-the-HTML-or-JS-file-I-just-need-to-add-2-lines-to-the-JSON-file-amp-the-new-quote-will-appear-on-the-browser-like-a-charm" class="headerlink" title="If I need to add a new Quote I manually don’t have to edit the HTML or JS file, I just need to add 2 lines to the JSON file &amp; the new quote will appear on the browser like a charm."></a>If I need to add a new Quote I manually don’t have to edit the HTML or JS file, I just need to add 2 lines to the JSON file &amp; the new quote will appear on the browser like a charm.</h4><h4 id="If-u-find-an-awesome-Quote-send-me-a-pull-request-here"><a href="#If-u-find-an-awesome-Quote-send-me-a-pull-request-here" class="headerlink" title="If u find an awesome Quote, send me a pull request here"></a>If u find an awesome Quote, send me a pull request <a href="https://github.com/deadcoder0904/a2k-quotes" target="_blank" rel="external">here</a></h4><blockquote>
-<p><a href="https://deadcoder0904.github.io/a2k-quotes/" target="_blank" rel="external">Awesome Curated Quotes by A2K</a></p>
-</blockquote>
-<h1 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h1><p><img src="http://imgur.com/ai1A1r5.png" alt="Quotes"></p>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-8-👾"><a href="#DAY-8-👾" class="headerlink" title="DAY 8 👾"></a>DAY 8 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h3 id="Today-I-created-a-fun-Web-App-of-my-awesome-collection-of-Quotes-I’ve-created-this-app-to-remember-some-Quotes-amp-if-u-know-me-personally-you’ll-hear-one-of-them-soon-enough"><a href="#Today-I-created-a-fun-Web-App-of-my-awesome-collection-of-Quotes-I’ve-created-this-app-to-remember-some-Quotes-amp-if-u-know-me-personally-you’ll-hear-one-of-them-soon-enough" class="headerlink" title="Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes &amp; if u know me personally, you’ll hear one of them soon enough."></a>Today I created a fun Web App of my awesome collection of Quotes. I’ve created this app to remember some Quotes &amp; if u know me personally, you’ll hear one of them soon enough.</h3><h3 id="If-I-need-to-add-a-new-Quote-I-manually-don’t-have-to-edit-the-HTML-or-JS-file-I-just-need-to-add-2-lines-to-the-JSON-file-amp-the-new-quote-will-appear-on-the-browser-like-a-charm"><a href="#If-I-need-to-add-a-new-Quote-I-manually-don’t-have-to-edit-the-HTML-or-JS-file-I-just-need-to-add-2-lines-to-the-JSON-file-amp-the-new-quote-will-appear-on-the-browser-like-a-charm" class="headerlink" title="If I need to add a new Quote I manually don’t have to edit the HTML or JS file, I just need to add 2 lines to the JSON file &amp; the new quote will appear on the browser like a charm."></a>If I need to add a new Quote I manually don’t have to edit the HTML or JS file, I just need to add 2 lines to the JSON file &amp; the new quote will appear on the browser like a charm.</h3><h3 id="If-u-find-an-awesome-Quote-send-me-a-pull-request-here"><a href="#If-u-find-an-awesome-Quote-send-me-a-pull-request-here" class="headerlink" title="If u find an awesome Quote, send me a pull request here"></a>If u find an awesome Quote, send me a pull request <a href="https://github.com/deadcoder0904/a2k-quotes" target="_blank" rel="external">here</a></h3><h2 id="Awesome-Curated-Quotes-by-A2K"><a href="#Awesome-Curated-Quotes-by-A2K" class="headerlink" title="Awesome Curated Quotes by A2K"></a><a href="https://deadcoder0904.github.io/a2k-quotes/" target="_blank" rel="external">Awesome Curated Quotes by A2K</a></h2><h1 id="Screenshots"><a href="#Screenshots" class="headerlink" title="Screenshots"></a>Screenshots</h1><p><img src="http://imgur.com/ai1A1r5.png" alt="Quotes"></p>
 <p><a href="https://github.com/deadcoder0904/a2k-quotes" target="_blank" rel="external">Final Application Here</a></p>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -80,8 +140,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -89,9 +149,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -123,6 +187,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

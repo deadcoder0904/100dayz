@@ -20,7 +20,15 @@
 <meta name="twitter:image" content="http://imgur.com/bTHzBao.png">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Random Profile Generator</title>
@@ -29,47 +37,102 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/14/Talk-Like-A-Pirate/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/12/Github-Trending-Site/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&text=Random Profile Generator"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&title=Random Profile Generator"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&is_video=false&description=Random Profile Generator"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Random Profile Generator&body=Check out this article: https://100dayz.js.org/2016/11/13/Random-Profile-Generator/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&title=Random Profile Generator"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&title=Random Profile Generator"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&title=Random Profile Generator"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&title=Random Profile Generator"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/13/Random-Profile-Generator/&name=Random Profile Generator&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-13-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 13 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-Random-Profile-Generator"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created Random Profile Generator.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-live-application-can-be-found-here"><span class="toc-number">1.0.2.</span> <span class="toc-text">The live application can be found here.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#It-uses-the-JSON-API-which-can-be-found-here"><span class="toc-number">1.0.3.</span> <span class="toc-text">It uses the JSON API which can be found here.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-code-used-for-this-application-can-be-found-here"><span class="toc-number">1.0.4.</span> <span class="toc-text">The code used for this application can be found here.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Screenshot"><span class="toc-number">2.</span> <span class="toc-text">Screenshot</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">2.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Random Profile Generator
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-12T18:30:00.000Z" itemprop="datePublished">2016-11-13</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-13-👾"><a href="#DAY-13-👾" class="headerlink" title="DAY 13 👾"></a>DAY 13 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Random-Profile-Generator"><a href="#Today-I-created-Random-Profile-Generator" class="headerlink" title="Today I created Random Profile Generator."></a>Today I created Random Profile Generator.</h4><h3 id="The-live-application-can-be-found-here"><a href="#The-live-application-can-be-found-here" class="headerlink" title="The live application can be found here."></a><a href="https://deadcoder0904.github.io/random-names/" target="_blank" rel="external">The live application can be found here</a>.</h3><p>It takes as input the number of Random Names to be generated, the gender of the Random Names &amp; the region for which you want the Random Names for and gives as output the number of Random Names you requested, their age, gender, birthdate &amp; region.</p>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-13-👾"><a href="#DAY-13-👾" class="headerlink" title="DAY 13 👾"></a>DAY 13 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Random-Profile-Generator"><a href="#Today-I-created-Random-Profile-Generator" class="headerlink" title="Today I created Random Profile Generator."></a>Today I created Random Profile Generator.</h4><h3 id="The-live-application-can-be-found-here"><a href="#The-live-application-can-be-found-here" class="headerlink" title="The live application can be found here."></a><a href="https://deadcoder0904.github.io/random-names/" target="_blank" rel="external">The live application can be found here</a>.</h3><p>It takes as input the number of Random Names to be generated, the gender of the Random Names &amp; the region for which you want the Random Names for and gives as output the number of Random Names you requested, their age, gender, birthdate &amp; region.</p>
 <h3 id="It-uses-the-JSON-API-which-can-be-found-here"><a href="#It-uses-the-JSON-API-which-can-be-found-here" class="headerlink" title="It uses the JSON API which can be found here."></a><a href="https://github.com/thm/uinames/" target="_blank" rel="external">It uses the JSON API which can be found here</a>.</h3><h3 id="The-code-used-for-this-application-can-be-found-here"><a href="#The-code-used-for-this-application-can-be-found-here" class="headerlink" title="The code used for this application can be found here."></a><a href="https://github.com/deadcoder0904/random-names/" target="_blank" rel="external">The code used for this application can be found here</a>.</h3><h1 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h1><p><img src="http://imgur.com/bTHzBao.png" alt="Random Names"></p>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -77,8 +140,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -86,9 +149,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -120,6 +187,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

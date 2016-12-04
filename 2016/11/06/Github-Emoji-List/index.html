@@ -13,14 +13,22 @@
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 6 👾I’m back 💙Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github.The live application can be found here.It gives all the Emoji’">
 <meta property="og:image" content="http://imgur.com/HofwIkj.png">
-<meta property="og:updated_time" content="2016-11-25T10:38:16.641Z">
+<meta property="og:updated_time" content="2016-12-04T14:12:00.724Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Emoji List">
 <meta name="twitter:description" content="DAY 6 👾I’m back 💙Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github.The live application can be found here.It gives all the Emoji’">
 <meta name="twitter:image" content="http://imgur.com/HofwIkj.png">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Github Emoji List</title>
@@ -29,55 +37,107 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/07/Github-Random-Emoji-Generator/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/05/Github-Gists/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/06/Github-Emoji-List/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&text=Github Emoji List"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&title=Github Emoji List"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&is_video=false&description=Github Emoji List"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Github Emoji List&body=Check out this article: https://100dayz.js.org/2016/11/06/Github-Emoji-List/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&title=Github Emoji List"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&title=Github Emoji List"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&title=Github Emoji List"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&title=Github Emoji List"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/06/Github-Emoji-List/&name=Github Emoji List&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-6-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 6 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-Github-Emoji-Lists-Website-I’ve-created-this-app-to-find-Emoji’s-quickly-that-are-supported-on-Github"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-live-application-can-be-found-here"><span class="toc-number">1.0.2.</span> <span class="toc-text">The live application can be found here.</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-App-is-very-simple-screenshot-provided-below"><span class="toc-number">1.0.3.</span> <span class="toc-text">The App is very simple, screenshot provided below</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Find-Github-Emoji-Lists"><span class="toc-number">1.1.</span> <span class="toc-text">Find Github Emoji Lists</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Emoji-List"><span class="toc-number">1.1.1.</span> <span class="toc-text">(1) Emoji List</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">1.2.</span> <span class="toc-text">Usage</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Clone-this-repo"><span class="toc-number">2.</span> <span class="toc-text">(1) Clone this repo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Go-into-the-directory"><span class="toc-number">3.</span> <span class="toc-text">(2) Go into the directory</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Open-index-html"><span class="toc-number">4.</span> <span class="toc-text">(3) Open index.html</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">4.0.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Github Emoji List
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-05T18:30:00.000Z" itemprop="datePublished">2016-11-06</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-6-👾"><a href="#DAY-6-👾" class="headerlink" title="DAY 6 👾"></a>DAY 6 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Emoji-Lists-Website-I’ve-created-this-app-to-find-Emoji’s-quickly-that-are-supported-on-Github"><a href="#Today-I-created-Github-Emoji-Lists-Website-I’ve-created-this-app-to-find-Emoji’s-quickly-that-are-supported-on-Github" class="headerlink" title="Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github."></a>Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github.</h4><h3 id="The-live-application-can-be-found-here"><a href="#The-live-application-can-be-found-here" class="headerlink" title="The live application can be found here."></a><a href="https://deadcoder0904.github.io/github-emoji-lists" target="_blank" rel="external">The live application can be found here</a>.</h3><p>It gives all the Emoji’s supported by Github. It uses Github API. It is my second experiment with functional CSS. Like I said in my previous post, I’ve used <a href="https://tachyons.io" target="_blank" rel="external">Tachyons</a> for this project. I’ve made this web app without even touching the CSS file. </p>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-6-👾"><a href="#DAY-6-👾" class="headerlink" title="DAY 6 👾"></a>DAY 6 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Emoji-Lists-Website-I’ve-created-this-app-to-find-Emoji’s-quickly-that-are-supported-on-Github"><a href="#Today-I-created-Github-Emoji-Lists-Website-I’ve-created-this-app-to-find-Emoji’s-quickly-that-are-supported-on-Github" class="headerlink" title="Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github."></a>Today I created Github Emoji Lists Website. I’ve created this app to find Emoji’s quickly that are supported on Github.</h4><h3 id="The-live-application-can-be-found-here"><a href="#The-live-application-can-be-found-here" class="headerlink" title="The live application can be found here."></a><a href="https://deadcoder0904.github.io/github-emoji-lists" target="_blank" rel="external">The live application can be found here</a>.</h3><p>It gives all the Emoji’s supported by Github. It uses Github API. It is my second experiment with functional CSS. Like I said in my previous post, I’ve used <a href="https://tachyons.io" target="_blank" rel="external">Tachyons</a> for this project. I’ve made this web app without even touching the CSS file. </p>
 <h3 id="The-App-is-very-simple-screenshot-provided-below"><a href="#The-App-is-very-simple-screenshot-provided-below" class="headerlink" title="The App is very simple, screenshot provided below"></a>The App is very simple, screenshot provided below</h3><h2 id="Find-Github-Emoji-Lists"><a href="#Find-Github-Emoji-Lists" class="headerlink" title="Find Github Emoji Lists"></a>Find Github Emoji Lists</h2><h3 id="1-Emoji-List"><a href="#1-Emoji-List" class="headerlink" title="(1) Emoji List"></a>(1) Emoji List</h3><p><img src="http://imgur.com/HofwIkj.png" alt="Github Emojis"></p>
 <h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><p>To run this app, follow these steps -</p>
-<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ git clone git@github.com:deadcoder<font color="#c00000">0904</font>/github-emoji-lists.git
-</font></pre></figure>
-<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$&#xA0;<font color="#d5e617">cd</font>&#xA0;github-emoji-lists
-</font></pre></figure>
-<h1 id="3-Open-index-html"><a href="#3-Open-index-html" class="headerlink" title="(3) Open index.html"></a>(3) Open <code>index.html</code></h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ google-chrome index.html
-</font></pre></figure>
+<h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:deadcoder0904/github-emoji-lists.git</div></pre></td></tr></table></figure>
+<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> github-emoji-lists</div></pre></td></tr></table></figure>
+<h1 id="3-Open-index-html"><a href="#3-Open-index-html" class="headerlink" title="(3) Open index.html"></a>(3) Open <code>index.html</code></h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ google-chrome index.html</div></pre></td></tr></table></figure>
 <p><a href="https://github.com/deadcoder0904/github-emoji-lists" target="_blank" rel="external">Final Application Here</a></p>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -85,8 +145,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -94,9 +154,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -128,6 +192,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

@@ -12,13 +12,21 @@
 <meta property="og:url" content="https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/index.html">
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 9 👾I’m back 💙Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checkingGithub Trending Repos.">
-<meta property="og:updated_time" content="2016-11-23T07:01:37.222Z">
+<meta property="og:updated_time" content="2016-12-04T14:46:01.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Trending Web Scraper">
 <meta name="twitter:description" content="DAY 9 👾I’m back 💙Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checkingGithub Trending Repos.">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Github Trending Web Scraper</title>
@@ -27,184 +35,108 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/10/Sort-Files-in-a-Directory-and-Number-them/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/08/A2K-Quotes/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&text=Github Trending Web Scraper"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&title=Github Trending Web Scraper"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&is_video=false&description=Github Trending Web Scraper"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Github Trending Web Scraper&body=Check out this article: https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&title=Github Trending Web Scraper"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&title=Github Trending Web Scraper"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&title=Github Trending Web Scraper"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&title=Github Trending Web Scraper"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/09/Github-Trending-Web-Scraper/&name=Github Trending Web Scraper&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-9-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 9 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-Github-Trending-Repos-JSON-API-I’ve-created-this-app-to-daily-get-updates-about-Github-Trending-Repos-from-1-place-rather-than-always-checking"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checking</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-JSON-API-can-be-found-here"><span class="toc-number">1.0.2.</span> <span class="toc-text">The JSON API can be found here.</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#The-API-is-in-the-following-format"><span class="toc-number">1.1.</span> <span class="toc-text">The API is in the following format</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#To-scrape-today’s-trending-follow-the-steps-given-below"><span class="toc-number">1.1.1.</span> <span class="toc-text">To scrape today’s trending, follow the steps given below :-</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#1-Clone-this-repo"><span class="toc-number">2.</span> <span class="toc-text">(1) Clone this repo</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#2-Go-into-the-directory"><span class="toc-number">3.</span> <span class="toc-text">(2) Go into the directory</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#3-Type-yarn-to-install-all-dependencies"><span class="toc-number">4.</span> <span class="toc-text">(3) Type yarn to install all dependencies</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#4-Type-yarn-start-to-start-scraping-the-web"><span class="toc-number">5.</span> <span class="toc-text">(4) Type yarn start to start scraping the web</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#In-a-minutes-time-depending-on-the-speed-of-your-internet-a-new-file-will-be-created-according-to-today’s-date-in-json-folder"><span class="toc-number">5.0.1.</span> <span class="toc-text">In a minutes time, depending on the speed of your internet, a new file will be created according to today’s date in json folder.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Voila-we-have-scraped-the-web-together-It-has-many-different-applications-Further-we-can-login-to-Facebook-and-Twitter-using-Nightmare-We-can-send-Automated-Emails-using-Nightmare-amp-many-more-things"><span class="toc-number">6.</span> <span class="toc-text">Voila, we have scraped the web together. It has many different applications. Further we can login to Facebook and Twitter using Nightmare. We can send Automated Emails using Nightmare & many more things . . .</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#⚠-Warning-It-scrapes-the-Github-Trending-Site-which-means-that-if-the-sites-layout-changes-this-project-won’t-work"><span class="toc-number">6.0.1.</span> <span class="toc-text">⚠ Warning : It scrapes the Github Trending Site which means that if the sites layout changes this project won’t work</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">6.0.2.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Github Trending Web Scraper
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-08T18:30:00.000Z" itemprop="datePublished">2016-11-09</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
-
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-9-👾"><a href="#DAY-9-👾" class="headerlink" title="DAY 9 👾"></a>DAY 9 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Trending-Repos-JSON-API-I’ve-created-this-app-to-daily-get-updates-about-Github-Trending-Repos-from-1-place-rather-than-always-checking"><a href="#Today-I-created-Github-Trending-Repos-JSON-API-I’ve-created-this-app-to-daily-get-updates-about-Github-Trending-Repos-from-1-place-rather-than-always-checking" class="headerlink" title="Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checking"></a>Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checking</h4><p><a href="https://github.com/trending" target="_blank" rel="external">Github Trending Repos</a>. </p>
-<h3 id="The-JSON-API-can-be-found-here"><a href="#The-JSON-API-can-be-found-here" class="headerlink" title="The JSON API can be found here."></a><a href="https://github.com/deadcoder0904/github-trending-json-api" target="_blank" rel="external">The JSON API can be found here</a>.</h3><p>It gives repo description &amp; the link to the repo. </p>
-<h2 id="The-API-is-in-the-following-format"><a href="#The-API-is-in-the-following-format" class="headerlink" title="The API is in the following format"></a>The API is in the following format</h2><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">&#xA0;&#xA0;1&#xA0;</font></span><font color="#0edbcb">{</font>&#xA0;
-<span id="L2"><font color="#d5e617">&#xA0;&#xA0;2&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L3"><font color="#d5e617">&#xA0;&#xA0;3&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;cs-video-courses&quot;</font>,
-<span id="L4"><font color="#d5e617">&#xA0;&#xA0;4&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/Developer-Y/cs-video-courses" target="_blank" rel="external">https://github.com/Developer-Y/cs-video-courses</a>&quot;</font>,
-<span id="L5"><font color="#d5e617">&#xA0;&#xA0;5&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;List of Computer Science courses with video lectures.&quot;</font>
-<span id="L6"><font color="#d5e617">&#xA0;&#xA0;6&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L7"><font color="#d5e617">&#xA0;&#xA0;7&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L8"><font color="#d5e617">&#xA0;&#xA0;8&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;Keyframes&quot;</font>,
-<span id="L9"><font color="#d5e617">&#xA0;&#xA0;9&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/facebookincubator/Keyframes" target="_blank" rel="external">https://github.com/facebookincubator/Keyframes</a>&quot;</font>,
-<span id="L10"><font color="#d5e617">&#xA0;10&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;A library for converting Adobe AE shape based animations to a data format and play it back on Android and iOS devices.&quot;</font>
-<span id="L11"><font color="#d5e617">&#xA0;11&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L12"><font color="#d5e617">&#xA0;12&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L13"><font color="#d5e617">&#xA0;13&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;pipfile&quot;</font>,
-<span id="L14"><font color="#d5e617">&#xA0;14&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/pypa/pipfile" target="_blank" rel="external">https://github.com/pypa/pipfile</a>&quot;</font>,
-<span id="L15"><font color="#d5e617">&#xA0;15&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Description Not Provided&quot;</font>
-<span id="L16"><font color="#d5e617">&#xA0;16&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L17"><font color="#d5e617">&#xA0;17&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L18"><font color="#d5e617">&#xA0;18&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;md2googleslides&quot;</font>,
-<span id="L19"><font color="#d5e617">&#xA0;19&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/googlesamples/md2googleslides" target="_blank" rel="external">https://github.com/googlesamples/md2googleslides</a>&quot;</font>,
-<span id="L20"><font color="#d5e617">&#xA0;20&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Generate Google Slides from markdown&quot;</font>
-<span id="L21"><font color="#d5e617">&#xA0;21&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L22"><font color="#d5e617">&#xA0;22&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L23"><font color="#d5e617">&#xA0;23&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;easy-application&quot;</font>,
-<span id="L24"><font color="#d5e617">&#xA0;24&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/j-delaney/easy-application" target="_blank" rel="external">https://github.com/j-delaney/easy-application</a>&quot;</font>,
-<span id="L25"><font color="#d5e617">&#xA0;25&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;351 software engineering companies that are easy to apply to&quot;</font>
-<span id="L26"><font color="#d5e617">&#xA0;26&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L27"><font color="#d5e617">&#xA0;27&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L28"><font color="#d5e617">&#xA0;28&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;pix2pix&quot;</font>,
-<span id="L29"><font color="#d5e617">&#xA0;29&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/phillipi/pix2pix" target="_blank" rel="external">https://github.com/phillipi/pix2pix</a>&quot;</font>,
-<span id="L30"><font color="#d5e617">&#xA0;30&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Image-to-image translation using conditional adversarial nets&quot;</font>
-<span id="L31"><font color="#d5e617">&#xA0;31&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L32"><font color="#d5e617">&#xA0;32&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L33"><font color="#d5e617">&#xA0;33&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;FreeCodeCamp&quot;</font>,
-<span id="L34"><font color="#d5e617">&#xA0;34&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/FreeCodeCamp/FreeCodeCamp" target="_blank" rel="external">https://github.com/FreeCodeCamp/FreeCodeCamp</a>&quot;</font>,
-<span id="L35"><font color="#d5e617">&#xA0;35&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;The <a href="https://FreeCodeCamp.com" target="_blank" rel="external">https://FreeCodeCamp.com</a> open source codebase and curriculum. Learn to code and help nonprofits.&quot;</font>
-<span id="L36"><font color="#d5e617">&#xA0;36&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L37"><font color="#d5e617">&#xA0;37&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L38"><font color="#d5e617">&#xA0;38&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;channels&quot;</font>,
-<span id="L39"><font color="#d5e617">&#xA0;39&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/andrew--r/channels" target="_blank" rel="external">https://github.com/andrew--r/channels</a>&quot;</font>,
-<span id="L40"><font color="#d5e617">&#xA0;40&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;A collection of useful YouTube channels for javascript developers and web designers&quot;</font>
-<span id="L41"><font color="#d5e617">&#xA0;41&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L42"><font color="#d5e617">&#xA0;42&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L43"><font color="#d5e617">&#xA0;43&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;react-draft-wysiwyg&quot;</font>,
-<span id="L44"><font color="#d5e617">&#xA0;44&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/jpuri/react-draft-wysiwyg" target="_blank" rel="external">https://github.com/jpuri/react-draft-wysiwyg</a>&quot;</font>,
-<span id="L45"><font color="#d5e617">&#xA0;45&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;A Wysiwyg editor build on top of ReactJS and DraftJS. <a href="https://jpuri.github.io/react-draft-wysiwyg" target="_blank" rel="external">https://jpuri.github.io/react-draft-wysiwyg</a>&quot;</font>
-<span id="L46"><font color="#d5e617">&#xA0;46&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L47"><font color="#d5e617">&#xA0;47&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L48"><font color="#d5e617">&#xA0;48&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;katana-swift&quot;</font>,
-<span id="L49"><font color="#d5e617">&#xA0;49&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/BendingSpoons/katana-swift" target="_blank" rel="external">https://github.com/BendingSpoons/katana-swift</a>&quot;</font>,
-<span id="L50"><font color="#d5e617">&#xA0;50&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Swift Apps in a Swoosh! A modern framework for creating iOS apps, inspired by React/Redux.&quot;</font>
-<span id="L51"><font color="#d5e617">&#xA0;51&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L52"><font color="#d5e617">&#xA0;52&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L53"><font color="#d5e617">&#xA0;53&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;BeeHive&quot;</font>,
-<span id="L54"><font color="#d5e617">&#xA0;54&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/alibaba/BeeHive" target="_blank" rel="external">https://github.com/alibaba/BeeHive</a>&quot;</font>,
-<span id="L55"><font color="#d5e617">&#xA0;55&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot; BeeHive is a solution for iOS Application module programs, it absorbed the Spring Framework API service concept to avoid to coupling between modules.&quot;</font>
-<span id="L56"><font color="#d5e617">&#xA0;56&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L57"><font color="#d5e617">&#xA0;57&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L58"><font color="#d5e617">&#xA0;58&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;ArcLayout&quot;</font>,
-<span id="L59"><font color="#d5e617">&#xA0;59&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/florent37/ArcLayout" target="_blank" rel="external">https://github.com/florent37/ArcLayout</a>&quot;</font>,
-<span id="L60"><font color="#d5e617">&#xA0;60&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;With Arc Layout explore new styles and approaches on material design&quot;</font>
-<span id="L61"><font color="#d5e617">&#xA0;61&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L62"><font color="#d5e617">&#xA0;62&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L63"><font color="#d5e617">&#xA0;63&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;jstraining&quot;</font>,
-<span id="L64"><font color="#d5e617">&#xA0;64&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/ruanyf/jstraining" target="_blank" rel="external">https://github.com/ruanyf/jstraining</a>&quot;</font>,
-<span id="L65"><font color="#d5e617">&#xA0;65&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;&#x5168;&#x6808;&#x5DE5;&#x7A0B;&#x5E08;&#x57F9;&#x8BAD;&#x6750;&#x6599;&quot;</font>
-<span id="L66"><font color="#d5e617">&#xA0;66&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L67"><font color="#d5e617">&#xA0;67&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L68"><font color="#d5e617">&#xA0;68&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;faust&quot;</font>,
-<span id="L69"><font color="#d5e617">&#xA0;69&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/grame-cncm/faust" target="_blank" rel="external">https://github.com/grame-cncm/faust</a>&quot;</font>,
-<span id="L70"><font color="#d5e617">&#xA0;70&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Description Not Provided&quot;</font>
-<span id="L71"><font color="#d5e617">&#xA0;71&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L72"><font color="#d5e617">&#xA0;72&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L73"><font color="#d5e617">&#xA0;73&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;go-audit&quot;</font>,
-<span id="L74"><font color="#d5e617">&#xA0;74&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/slackhq/go-audit" target="_blank" rel="external">https://github.com/slackhq/go-audit</a>&quot;</font>,
-<span id="L75"><font color="#d5e617">&#xA0;75&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;go-audit is an alternative to the auditd daemon that ships with many distros&quot;</font>
-<span id="L76"><font color="#d5e617">&#xA0;76&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L77"><font color="#d5e617">&#xA0;77&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L78"><font color="#d5e617">&#xA0;78&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;awesome-mac&quot;</font>,
-<span id="L79"><font color="#d5e617">&#xA0;79&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/jaywcjlove/awesome-mac" target="_blank" rel="external">https://github.com/jaywcjlove/awesome-mac</a>&quot;</font>,
-<span id="L80"><font color="#d5e617">&#xA0;80&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;&#xF8FF; This repo is a collection of awesome Mac applications and tools for developers and designers.&quot;</font>
-<span id="L81"><font color="#d5e617">&#xA0;81&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L82"><font color="#d5e617">&#xA0;82&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L83"><font color="#d5e617">&#xA0;83&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;ENViews&quot;</font>,
-<span id="L84"><font color="#d5e617">&#xA0;84&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/codeestX/ENViews" target="_blank" rel="external">https://github.com/codeestX/ENViews</a>&quot;</font>,
-<span id="L85"><font color="#d5e617">&#xA0;85&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;A cool dynamic view library&quot;</font>
-<span id="L86"><font color="#d5e617">&#xA0;86&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L87"><font color="#d5e617">&#xA0;87&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L88"><font color="#d5e617">&#xA0;88&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;Diff.swift&quot;</font>,
-<span id="L89"><font color="#d5e617">&#xA0;89&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/wokalski/Diff.swift" target="_blank" rel="external">https://github.com/wokalski/Diff.swift</a>&quot;</font>,
-<span id="L90"><font color="#d5e617">&#xA0;90&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;The fastest Diff and patch library in Swift. Includes UICollectionView/UITableView utils.&quot;</font>
-<span id="L91"><font color="#d5e617">&#xA0;91&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L92"><font color="#d5e617">&#xA0;92&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L93"><font color="#d5e617">&#xA0;93&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;poisontap&quot;</font>,
-<span id="L94"><font color="#d5e617">&#xA0;94&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/samyk/poisontap" target="_blank" rel="external">https://github.com/samyk/poisontap</a>&quot;</font>,
-<span id="L95"><font color="#d5e617">&#xA0;95&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Exploits locked/password protected computers over USB, drops persistent WebSocket-based backdoor, exposes internal router, and siphons cookies using Raspberry Pi Zero &amp; Node.js.&quot;</font>
-<span id="L96"><font color="#d5e617">&#xA0;96&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L97"><font color="#d5e617">&#xA0;97&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L98"><font color="#d5e617">&#xA0;98&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;vue&quot;</font>,
-<span id="L99"><font color="#d5e617">&#xA0;99&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/vuejs/vue" target="_blank" rel="external">https://github.com/vuejs/vue</a>&quot;</font>,
-<span id="L100"><font color="#d5e617">100&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Simple yet powerful library for building modern web interfaces.&quot;</font>
-<span id="L101"><font color="#d5e617">101&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L102"><font color="#d5e617">102&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L103"><font color="#d5e617">103&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;Eve&quot;</font>,
-<span id="L104"><font color="#d5e617">104&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/witheve/Eve" target="_blank" rel="external">https://github.com/witheve/Eve</a>&quot;</font>,
-<span id="L105"><font color="#d5e617">105&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Better tools for thought&quot;</font>
-<span id="L106"><font color="#d5e617">106&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L107"><font color="#d5e617">107&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L108"><font color="#d5e617">108&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;tensorflow&quot;</font>,
-<span id="L109"><font color="#d5e617">109&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="external">https://github.com/tensorflow/tensorflow</a>&quot;</font>,
-<span id="L110"><font color="#d5e617">110&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Computation using data flow graphs for scalable machine learning&quot;</font>
-<span id="L111"><font color="#d5e617">111&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L112"><font color="#d5e617">112&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L113"><font color="#d5e617">113&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;Crescento&quot;</font>,
-<span id="L114"><font color="#d5e617">114&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/developer-shivam/Crescento" target="_blank" rel="external">https://github.com/developer-shivam/Crescento</a>&quot;</font>,
-<span id="L115"><font color="#d5e617">115&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Add curve at bottom of image views and relative layouts.&quot;</font>
-<span id="L116"><font color="#d5e617">116&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L117"><font color="#d5e617">117&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L118"><font color="#d5e617">118&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;superset&quot;</font>,
-<span id="L119"><font color="#d5e617">119&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/airbnb/superset" target="_blank" rel="external">https://github.com/airbnb/superset</a>&quot;</font>,
-<span id="L120"><font color="#d5e617">120&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;Superset is a data exploration platform designed to be visual, intuitive, and interactive&quot;</font>
-<span id="L121"><font color="#d5e617">121&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>,
-<span id="L122"><font color="#d5e617">122&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">{</font>
-<span id="L123"><font color="#d5e617">123&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;name&quot;</font>:&#xA0;<font color="#c00000">&quot;LolliPin&quot;</font>,
-<span id="L124"><font color="#d5e617">124&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;url&quot;</font>:&#xA0;<font color="#c00000">&quot;<a href="https://github.com/OrangeGangsters/LolliPin" target="_blank" rel="external">https://github.com/OrangeGangsters/LolliPin</a>&quot;</font>,
-<span id="L125"><font color="#d5e617">125&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;<font color="#c00000">&quot;description&quot;</font>:&#xA0;<font color="#c00000">&quot;A Material design Android pincode library. Supports Fingerprint.&quot;</font>
-<span id="L126"><font color="#d5e617">126&#xA0;</font></span>&#xA0;&#xA0;<font color="#0edbcb">}</font>
-<span id="L127"><font color="#d5e617">127&#xA0;</font></span><font color="#0edbcb">]</font>
-</font></pre></figure>
-<p>This project looks very simple, but it was very tricky because it was my first time using <a href="https://nightmarejs.org" target="_blank" rel="external">Nightmare JS</a>. Nightmare is a High Level Automation Library made using Electron. It is same as <a href="http://phantomjs.org/" target="_blank" rel="external">Phantom JS</a>, but it is fast &amp; a little modern.</p>
-<h3 id="To-scrape-today’s-trending-follow-the-steps-given-below"><a href="#To-scrape-today’s-trending-follow-the-steps-given-below" class="headerlink" title="To scrape today’s trending, follow the steps given below :-"></a>To scrape today’s trending, follow the steps given below :-</h3><h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ git clone git@github.com:deadcoder<font color="#c00000">0904</font>/github-trending-json-api.git
-</font></pre></figure>
-<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$&#xA0;<font color="#d5e617">cd</font>&#xA0;github-trending-json-api
-</font></pre></figure>
-<h1 id="3-Type-yarn-to-install-all-dependencies"><a href="#3-Type-yarn-to-install-all-dependencies" class="headerlink" title="(3) Type yarn to install all dependencies"></a>(3) Type <code>yarn</code> to install all dependencies</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ yarn
-</font></pre></figure>
-<h1 id="4-Type-yarn-start-to-start-scraping-the-web"><a href="#4-Type-yarn-start-to-start-scraping-the-web" class="headerlink" title="(4) Type yarn start to start scraping the web"></a>(4) Type <code>yarn start</code> to start scraping the web</h1><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ yarn&#xA0;<font color="#d5e617">start</font>
-</font></pre></figure>
-<h3 id="In-a-minutes-time-depending-on-the-speed-of-your-internet-a-new-file-will-be-created-according-to-today’s-date-in-json-folder"><a href="#In-a-minutes-time-depending-on-the-speed-of-your-internet-a-new-file-will-be-created-according-to-today’s-date-in-json-folder" class="headerlink" title="In a minutes time, depending on the speed of your internet, a new file will be created according to today’s date in json folder."></a>In a minutes time, depending on the speed of your internet, a new file will be created according to today’s date in <code>json</code> folder.</h3><h2 id="Voila-we-have-scraped-the-web-together-It-has-many-more-applications-further-We-can-login-to-Facebook-amp-Twitter-using-Nightmare-We-can-send-Automated-Emails-using-Nightmare-amp-many-more-things…"><a href="#Voila-we-have-scraped-the-web-together-It-has-many-more-applications-further-We-can-login-to-Facebook-amp-Twitter-using-Nightmare-We-can-send-Automated-Emails-using-Nightmare-amp-many-more-things…" class="headerlink" title="Voila, we have scraped the web together. It has many more applications further. We can login to Facebook &amp; Twitter using Nightmare. We can send Automated Emails using Nightmare &amp; many more things…."></a>Voila, we have scraped the web together. It has many more applications further. We can login to Facebook &amp; Twitter using Nightmare. We can send Automated Emails using Nightmare &amp; many more things….</h2><h6 id="⚠-Warning-It-scrapes-the-Github-Trending-Site-which-means-that-if-the-sites-layout-changes-this-project-won’t-work"><a href="#⚠-Warning-It-scrapes-the-Github-Trending-Site-which-means-that-if-the-sites-layout-changes-this-project-won’t-work" class="headerlink" title="⚠ Warning : It scrapes the Github Trending Site which means that if the sites layout changes this project won’t work"></a>⚠ Warning : It scrapes the <a href="https://github.com/trending" target="_blank" rel="external">Github Trending Site</a> which means that if the sites layout changes this project won’t work</h6><h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
     </div>
-  </article>
+  </header>
   
+
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-9-👾"><a href="#DAY-9-👾" class="headerlink" title="DAY 9 👾"></a>DAY 9 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Trending-Repos-JSON-API-I’ve-created-this-app-to-daily-get-updates-about-Github-Trending-Repos-from-1-place-rather-than-always-checking"><a href="#Today-I-created-Github-Trending-Repos-JSON-API-I’ve-created-this-app-to-daily-get-updates-about-Github-Trending-Repos-from-1-place-rather-than-always-checking" class="headerlink" title="Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checking"></a>Today I created Github Trending Repos JSON API. I’ve created this app to daily get updates about Github Trending Repos from 1 place rather than always checking</h4><p><a href="https://github.com/trending" target="_blank" rel="external">Github Trending Repos</a>. </p>
+<h3 id="The-JSON-API-can-be-found-here"><a href="#The-JSON-API-can-be-found-here" class="headerlink" title="The JSON API can be found here."></a><a href="https://github.com/deadcoder0904/github-trending-json-api" target="_blank" rel="external">The JSON API can be found here</a>.</h3><p>It gives repo description &amp; the link to the repo. </p>
+<h2 id="The-API-is-in-the-following-format"><a href="#The-API-is-in-the-following-format" class="headerlink" title="The API is in the following format"></a>The API is in the following format</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div><div class="line">56</div><div class="line">57</div><div class="line">58</div><div class="line">59</div><div class="line">60</div><div class="line">61</div><div class="line">62</div><div class="line">63</div><div class="line">64</div><div class="line">65</div><div class="line">66</div><div class="line">67</div><div class="line">68</div><div class="line">69</div><div class="line">70</div><div class="line">71</div><div class="line">72</div><div class="line">73</div><div class="line">74</div><div class="line">75</div><div class="line">76</div><div class="line">77</div><div class="line">78</div><div class="line">79</div><div class="line">80</div><div class="line">81</div><div class="line">82</div><div class="line">83</div><div class="line">84</div><div class="line">85</div><div class="line">86</div><div class="line">87</div><div class="line">88</div><div class="line">89</div><div class="line">90</div><div class="line">91</div><div class="line">92</div><div class="line">93</div><div class="line">94</div><div class="line">95</div><div class="line">96</div><div class="line">97</div><div class="line">98</div><div class="line">99</div><div class="line">100</div><div class="line">101</div><div class="line">102</div><div class="line">103</div><div class="line">104</div><div class="line">105</div><div class="line">106</div><div class="line">107</div><div class="line">108</div><div class="line">109</div><div class="line">110</div><div class="line">111</div><div class="line">112</div><div class="line">113</div><div class="line">114</div><div class="line">115</div><div class="line">116</div><div class="line">117</div><div class="line">118</div><div class="line">119</div><div class="line">120</div><div class="line">121</div><div class="line">122</div><div class="line">123</div><div class="line">124</div><div class="line">125</div><div class="line">126</div><div class="line">127</div></pre></td><td class="code"><pre><div class="line">&#123; </div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"cs-video-courses"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/Developer-Y/cs-video-courses"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"List of Computer Science courses with video lectures."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"Keyframes"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/facebookincubator/Keyframes"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"A library for converting Adobe AE shape based animations to a data format and play it back on Android and iOS devices."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"pipfile"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/pypa/pipfile"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Description Not Provided"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"md2googleslides"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/googlesamples/md2googleslides"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Generate Google Slides from markdown"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"easy-application"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/j-delaney/easy-application"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"351 software engineering companies that are easy to apply to"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"pix2pix"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/phillipi/pix2pix"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Image-to-image translation using conditional adversarial nets"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"FreeCodeCamp"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/FreeCodeCamp/FreeCodeCamp"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"The https://FreeCodeCamp.com open source codebase and curriculum. Learn to code and help nonprofits."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"channels"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/andrew--r/channels"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"A collection of useful YouTube channels for javascript developers and web designers"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"react-draft-wysiwyg"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/jpuri/react-draft-wysiwyg"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"A Wysiwyg editor build on top of ReactJS and DraftJS. https://jpuri.github.io/react-draft-wysiwyg"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"katana-swift"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/BendingSpoons/katana-swift"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Swift Apps in a Swoosh! A modern framework for creating iOS apps, inspired by React/Redux."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"BeeHive"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/alibaba/BeeHive"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">" BeeHive is a solution for iOS Application module programs, it absorbed the Spring Framework API service concept to avoid to coupling between modules."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"ArcLayout"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/florent37/ArcLayout"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"With Arc Layout explore new styles and approaches on material design"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"jstraining"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/ruanyf/jstraining"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"全栈工程师培训材料"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"faust"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/grame-cncm/faust"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Description Not Provided"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"go-audit"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/slackhq/go-audit"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"go-audit is an alternative to the auditd daemon that ships with many distros"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"awesome-mac"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/jaywcjlove/awesome-mac"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">" This repo is a collection of awesome Mac applications and tools for developers and designers."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"ENViews"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/codeestX/ENViews"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"A cool dynamic view library"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"Diff.swift"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/wokalski/Diff.swift"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"The fastest Diff and patch library in Swift. Includes UICollectionView/UITableView utils."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"poisontap"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/samyk/poisontap"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Exploits locked/password protected computers over USB, drops persistent WebSocket-based backdoor, exposes internal router, and siphons cookies using Raspberry Pi Zero &amp; Node.js."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"vue"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/vuejs/vue"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Simple yet powerful library for building modern web interfaces."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"Eve"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/witheve/Eve"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Better tools for thought"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"tensorflow"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/tensorflow/tensorflow"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Computation using data flow graphs for scalable machine learning"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"Crescento"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/developer-shivam/Crescento"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Add curve at bottom of image views and relative layouts."</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"superset"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/airbnb/superset"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"Superset is a data exploration platform designed to be visual, intuitive, and interactive"</span></div><div class="line">  &#125;,</div><div class="line">  &#123;</div><div class="line">    <span class="string">"name"</span>: <span class="string">"LolliPin"</span>,</div><div class="line">    <span class="string">"url"</span>: <span class="string">"https://github.com/OrangeGangsters/LolliPin"</span>,</div><div class="line">    <span class="string">"description"</span>: <span class="string">"A Material design Android pincode library. Supports Fingerprint."</span></div><div class="line">  &#125;</div><div class="line">]</div></pre></td></tr></table></figure>
+<p>This project looks very simple, but it was very tricky because it was my first time using <a href="https://nightmarejs.org" target="_blank" rel="external">Nightmare JS</a>. Nightmare is a High Level Automation Library made using Electron. It is same as <a href="http://phantomjs.org/" target="_blank" rel="external">Phantom JS</a>, but it is fast &amp; a little modern.</p>
+<h3 id="To-scrape-today’s-trending-follow-the-steps-given-below"><a href="#To-scrape-today’s-trending-follow-the-steps-given-below" class="headerlink" title="To scrape today’s trending, follow the steps given below :-"></a>To scrape today’s trending, follow the steps given below :-</h3><h1 id="1-Clone-this-repo"><a href="#1-Clone-this-repo" class="headerlink" title="(1) Clone this repo"></a>(1) Clone this repo</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ git <span class="built_in">clone</span> git@github.com:deadcoder0904/github-trending-json-api.git</div></pre></td></tr></table></figure>
+<h1 id="2-Go-into-the-directory"><a href="#2-Go-into-the-directory" class="headerlink" title="(2) Go into the directory"></a>(2) Go into the directory</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ <span class="built_in">cd</span> github-trending-json-api</div></pre></td></tr></table></figure>
+<h1 id="3-Type-yarn-to-install-all-dependencies"><a href="#3-Type-yarn-to-install-all-dependencies" class="headerlink" title="(3) Type yarn to install all dependencies"></a>(3) Type <code>yarn</code> to install all dependencies</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yarn</div></pre></td></tr></table></figure>
+<h1 id="4-Type-yarn-start-to-start-scraping-the-web"><a href="#4-Type-yarn-start-to-start-scraping-the-web" class="headerlink" title="(4) Type yarn start to start scraping the web"></a>(4) Type <code>yarn start</code> to start scraping the web</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ yarn start</div></pre></td></tr></table></figure>
+<h3 id="In-a-minutes-time-depending-on-the-speed-of-your-internet-a-new-file-will-be-created-according-to-today’s-date-in-json-folder"><a href="#In-a-minutes-time-depending-on-the-speed-of-your-internet-a-new-file-will-be-created-according-to-today’s-date-in-json-folder" class="headerlink" title="In a minutes time, depending on the speed of your internet, a new file will be created according to today’s date in json folder."></a>In a minutes time, depending on the speed of your internet, a new file will be created according to today’s date in <code>json</code> folder.</h3><h1 id="Voila-we-have-scraped-the-web-together-It-has-many-different-applications-Further-we-can-login-to-Facebook-and-Twitter-using-Nightmare-We-can-send-Automated-Emails-using-Nightmare-amp-many-more-things"><a href="#Voila-we-have-scraped-the-web-together-It-has-many-different-applications-Further-we-can-login-to-Facebook-and-Twitter-using-Nightmare-We-can-send-Automated-Emails-using-Nightmare-amp-many-more-things" class="headerlink" title="Voila, we have scraped the web together. It has many different applications. Further we can login to Facebook and Twitter using Nightmare. We can send Automated Emails using Nightmare &amp; many more things . . ."></a>Voila, we have scraped the web together. It has many different applications. Further we can login to Facebook and Twitter using Nightmare. We can send Automated Emails using Nightmare &amp; many more things . . .</h1><h3 id="⚠-Warning-It-scrapes-the-Github-Trending-Site-which-means-that-if-the-sites-layout-changes-this-project-won’t-work"><a href="#⚠-Warning-It-scrapes-the-Github-Trending-Site-which-means-that-if-the-sites-layout-changes-this-project-won’t-work" class="headerlink" title="⚠ Warning : It scrapes the Github Trending Site which means that if the sites layout changes this project won’t work"></a>⚠ Warning : It scrapes the <a href="https://github.com/trending" target="_blank" rel="external">Github Trending Site</a> which means that if the sites layout changes this project won’t work</h3><h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -212,8 +144,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -221,9 +153,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -255,6 +191,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

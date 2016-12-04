@@ -12,13 +12,21 @@
 <meta property="og:url" content="https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/index.html">
 <meta property="og:site_name" content="A2K">
 <meta property="og:description" content="DAY 7 👾I’m back 💙Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message.The npm package can">
-<meta property="og:updated_time" content="2016-11-16T12:28:39.458Z">
+<meta property="og:updated_time" content="2016-12-04T14:11:36.564Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Github Random Emoji Generator">
 <meta name="twitter:description" content="DAY 7 👾I’m back 💙Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message.The npm package can">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Github Random Emoji Generator</title>
@@ -27,74 +35,105 @@
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/08/A2K-Quotes/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/06/Github-Emoji-List/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&text=Github Random Emoji Generator"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&title=Github Random Emoji Generator"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&is_video=false&description=Github Random Emoji Generator"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Github Random Emoji Generator&body=Check out this article: https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&title=Github Random Emoji Generator"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&title=Github Random Emoji Generator"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&title=Github Random Emoji Generator"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&title=Github Random Emoji Generator"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/07/Github-Random-Emoji-Generator/&name=Github Random Emoji Generator&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-7-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 7 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-Github-Random-Emoji-Generator-Package-I’ve-created-this-package-to-insert-random-Emoji’s-that-are-supported-on-Github-in-my-each-commit-message"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message.</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#The-npm-package-can-be-found-here"><span class="toc-number">1.0.2.</span> <span class="toc-text">The npm package can be found here.</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#RANDOM-EMOJI-JSON-FILE"><span class="toc-number">1.1.</span> <span class="toc-text">RANDOM EMOJI.JSON FILE</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Code"><span class="toc-number">1.2.</span> <span class="toc-text">Code</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Install"><span class="toc-number">1.3.</span> <span class="toc-text">Install</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Usage"><span class="toc-number">1.4.</span> <span class="toc-text">Usage</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">1.4.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Github Random Emoji Generator
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-06T18:30:00.000Z" itemprop="datePublished">2016-11-07</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-7-👾"><a href="#DAY-7-👾" class="headerlink" title="DAY 7 👾"></a>DAY 7 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Random-Emoji-Generator-Package-I’ve-created-this-package-to-insert-random-Emoji’s-that-are-supported-on-Github-in-my-each-commit-message"><a href="#Today-I-created-Github-Random-Emoji-Generator-Package-I’ve-created-this-package-to-insert-random-Emoji’s-that-are-supported-on-Github-in-my-each-commit-message" class="headerlink" title="Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message."></a>Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message.</h4><h3 id="The-npm-package-can-be-found-here"><a href="#The-npm-package-can-be-found-here" class="headerlink" title="The npm package can be found here."></a><a href="https://npm.im/random-github-emoji/" target="_blank" rel="external">The npm package can be found here</a>.</h3><p>It gives all the Emoji’s supported by Github. It uses a Github Emoji’s JSON file. The file can be found <a href="https://github.com/deadcoder0904/generate-random-github-emoji/blob/master/random.json" target="_blank" rel="external">here</a>. </p>
-<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">&#xA0;1&#xA0;</font></span><font color="#0edbcb">var</font>&#xA0;jsonContent = require(<font color="#c00000">&quot;./random.json&quot;</font>);
-<span id="L2"><font color="#d5e617">&#xA0;2&#xA0;</font></span>
-<span id="L3"><font color="#d5e617">&#xA0;3&#xA0;</font></span><font color="#0edbcb">var</font>&#xA0;arr =&#xA0;<font color="#0edbcb">[]</font>;
-<span id="L4"><font color="#d5e617">&#xA0;4&#xA0;</font></span>
-<span id="L5"><font color="#d5e617">&#xA0;5&#xA0;</font></span><font color="#d5e617">for</font>(<font color="#0edbcb">var</font>&#xA0;keys&#xA0;<font color="#d5e617">in</font>&#xA0;jsonContent)&#xA0;<font color="#0edbcb">{</font>
-<span id="L6"><font color="#d5e617">&#xA0;6&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;arr.push(keys);
-<span id="L7"><font color="#d5e617">&#xA0;7&#xA0;</font></span><font color="#0edbcb">}</font>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
-<span id="L8"><font color="#d5e617">&#xA0;8&#xA0;</font></span>
-<span id="L9"><font color="#d5e617">&#xA0;9&#xA0;</font></span><font color="#0edbcb">var</font>&#xA0;n = Math.floor(Math.random()&#xA0;* arr.length);
-<span id="L10"><font color="#d5e617">10&#xA0;</font></span>
-<span id="L11"><font color="#d5e617">11&#xA0;</font></span><font color="#0edbcb">var</font>&#xA0;obj =&#xA0;<font color="#0edbcb">{</font>
-<span id="L12"><font color="#d5e617">12&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;name: arr<font color="#0edbcb">[</font>n<font color="#0edbcb">]</font>,
-<span id="L13"><font color="#d5e617">13&#xA0;</font></span>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;emoji: jsonContent<font color="#0edbcb">[</font>arr<font color="#0edbcb">[</font>n<font color="#0edbcb">]]</font>
-<span id="L14"><font color="#d5e617">14&#xA0;</font></span><font color="#0edbcb">}</font>;
-<span id="L15"><font color="#d5e617">15&#xA0;</font></span>
-<span id="L16"><font color="#d5e617">16&#xA0;</font></span>console.log(obj);
-</font></pre></figure>
-<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span>$ npm install&#xA0;<font color="#c000c0">--save</font>&#xA0;random-github-emoji
-</font></pre></figure>
-<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight"><pre><font face="monospace"><span id="L1"><font color="#d5e617">1&#xA0;</font></span><font color="#d5e617">const</font>&#xA0;random = require(<font color="#c00000">&apos;random-github-emoji&apos;</font>);
-<span id="L2"><font color="#d5e617">2&#xA0;</font></span>
-<span id="L3"><font color="#d5e617">3&#xA0;</font></span>random();
-<span id="L4"><font color="#d5e617">4&#xA0;</font></span><font color="#2277cc">//=&gt; { name: &apos;crocodile&apos;, emoji: &apos;&#x1F40A;&apos; }</font>
-<span id="L5"><font color="#d5e617">5&#xA0;</font></span>
-<span id="L6"><font color="#d5e617">6&#xA0;</font></span>random();
-<span id="L7"><font color="#d5e617">7&#xA0;</font></span><font color="#2277cc">//=&gt; { name: &apos;hammer_and_pick&apos;, emoji: &apos;&#x2692;&apos; }</font>
-</font></pre></figure>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-7-👾"><a href="#DAY-7-👾" class="headerlink" title="DAY 7 👾"></a>DAY 7 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Github-Random-Emoji-Generator-Package-I’ve-created-this-package-to-insert-random-Emoji’s-that-are-supported-on-Github-in-my-each-commit-message"><a href="#Today-I-created-Github-Random-Emoji-Generator-Package-I’ve-created-this-package-to-insert-random-Emoji’s-that-are-supported-on-Github-in-my-each-commit-message" class="headerlink" title="Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message."></a>Today I created Github Random Emoji Generator Package. I’ve created this package to insert random Emoji’s that are supported on Github in my each commit message.</h4><h3 id="The-npm-package-can-be-found-here"><a href="#The-npm-package-can-be-found-here" class="headerlink" title="The npm package can be found here."></a><a href="https://npm.im/random-github-emoji/" target="_blank" rel="external">The npm package can be found here</a>.</h3><h2 id="RANDOM-EMOJI-JSON-FILE"><a href="#RANDOM-EMOJI-JSON-FILE" class="headerlink" title="RANDOM EMOJI.JSON FILE"></a>RANDOM <code>EMOJI.JSON</code> FILE</h2><p>It gives all the Emoji’s supported by Github. It uses a Github Emoji’s JSON file. The file can be found <a href="https://github.com/deadcoder0904/generate-random-github-emoji/blob/master/random.json" target="_blank" rel="external">here</a>. </p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">var</span> jsonContent = <span class="built_in">require</span>(<span class="string">"./random.json"</span>);</div><div class="line"></div><div class="line"><span class="keyword">var</span> arr = [];</div><div class="line"></div><div class="line"><span class="keyword">for</span>(<span class="keyword">var</span> keys <span class="keyword">in</span> jsonContent) &#123;</div><div class="line">	arr.push(keys);</div><div class="line">&#125;	</div><div class="line"></div><div class="line"><span class="keyword">var</span> n = <span class="built_in">Math</span>.floor(<span class="built_in">Math</span>.random() * arr.length);</div><div class="line"></div><div class="line"><span class="keyword">var</span> obj = &#123;</div><div class="line">	<span class="attr">name</span>: arr[n],</div><div class="line">	<span class="attr">emoji</span>: jsonContent[arr[n]]</div><div class="line">&#125;;</div><div class="line"></div><div class="line"><span class="built_in">console</span>.log(obj);</div></pre></td></tr></table></figure>
+<h2 id="Install"><a href="#Install" class="headerlink" title="Install"></a>Install</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install --save random-github-emoji</div></pre></td></tr></table></figure>
+<h2 id="Usage"><a href="#Usage" class="headerlink" title="Usage"></a>Usage</h2><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">const</span> random = <span class="built_in">require</span>(<span class="string">'random-github-emoji'</span>);</div><div class="line"></div><div class="line">random();</div><div class="line"><span class="comment">//=&gt; &#123; name: 'crocodile', emoji: '🐊' &#125;</span></div><div class="line"></div><div class="line">random();</div><div class="line"><span class="comment">//=&gt; &#123; name: 'hammer_and_pick', emoji: '⚒' &#125;</span></div></pre></td></tr></table></figure>
 <p><a href="https://github.com/deadcoder0904/generate-random-github-emoji/" target="_blank" rel="external">Final Application Code Here</a></p>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -102,8 +141,8 @@
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -111,9 +150,13 @@
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -145,6 +188,7 @@
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>

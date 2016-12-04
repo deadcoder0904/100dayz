@@ -24,7 +24,15 @@ ExplanationHello my F">
 <meta name="twitter:image" content="http://imgur.com/QP7tthh.png">
     
     
-        <link rel="icon" type="image/png" href="/images/favicon.png" sizes="32x32" />
+        
+          <link rel="shortcut icon" href="/images/favicon.ico">
+        
+        
+          <link rel="icon" type="image/png" href="/images/favicon-192x192.png" sizes="192x192">
+        
+        
+          <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+        
     
     <!-- title -->
     <title>Talk Like a Pirate</title>
@@ -33,48 +41,103 @@ ExplanationHello my F">
     <link rel="stylesheet" href="/lib/meslo-LG/styles.css">
     <link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
     <link rel="stylesheet" href="/css/style.css">
+    <!-- rss -->
+    
+    
     <!-- jquery -->
     <script src="/lib/jquery/jquery.min.js"></script>
 </head>
 
 <body>
-    <div class="content post width mx-auto px2 my4">
-  <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
-    <header>
-      <span class="top-subtitle">
-          <a href="/archives">Writing</a>
-      </span>
-      
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+      <ul>
+        
+        <li><a class="icon" href="/2016/11/15/Awesome-Responsive-Navbar/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover='$("#i-prev").toggle();' onmouseout='$("#i-prev").toggle();'></i></a></li>
+        
+        
+        <li><a class="icon" href="/2016/11/13/Random-Profile-Generator/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover='$("#i-next").toggle();' onmouseout='$("#i-next").toggle();'></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover='$("#i-top").toggle();' onmouseout='$("#i-top").toggle();'></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover='$("#i-share").toggle();' onmouseout='$("#i-share").toggle();' onclick='$("#share").toggle();return false;'></i></a></li>
+      </ul>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+        <li><a class="icon" href="http://www.facebook.com/sharer.php?u=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://twitter.com/share?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&text=Talk Like a Pirate"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&title=Talk Like a Pirate"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&is_video=false&description=Talk Like a Pirate"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="mailto:?subject=Talk Like a Pirate&body=Check out this article: https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="https://getpocket.com/save?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&title=Talk Like a Pirate"><i class="fa fa-get-pocket" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://reddit.com/submit?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&title=Talk Like a Pirate"><i class="fa fa-reddit" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.stumbleupon.com/submit?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&title=Talk Like a Pirate"><i class="fa fa-stumbleupon" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://digg.com/submit?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&title=Talk Like a Pirate"><i class="fa fa-digg" aria-hidden="true"></i></a></li>
+        <li><a class="icon" href="http://www.tumblr.com/share/link?url=https://100dayz.js.org/2016/11/14/Talk-Like-A-Pirate/&name=Talk Like a Pirate&description="><i class="fa fa-tumblr" aria-hidden="true"></i></a></li>
+      </ul>
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DAY-14-👾"><span class="toc-number">1.</span> <span class="toc-text">DAY 14 👾</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#I’m-back-💙"><span class="toc-number">1.0.1.</span> <span class="toc-text">I’m back 💙</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Today-I-created-Talk-Like-A-Pirate-Site-It-is-a-fun-app"><span class="toc-number">1.0.1.1.</span> <span class="toc-text">Today I created Talk Like A Pirate Site. It is a fun app.</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Demo"><span class="toc-number">2.</span> <span class="toc-text">Demo</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#You-give-it-a-text-in-English-and-it-will-convert-the-plain-English-Text-to-Piratey-Language"><span class="toc-number">2.0.0.1.</span> <span class="toc-text">You give it a text in English and it will convert the plain English Text to Piratey Language.</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#What"><span class="toc-number">2.1.</span> <span class="toc-text">What</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Explanation"><span class="toc-number">2.2.</span> <span class="toc-text">Explanation</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Hello-my-Friend-do-you-know-where-I-can-meet-a-Woman-around-here"><span class="toc-number">3.</span> <span class="toc-text">Hello my Friend, do you know where I can meet a Woman around here?</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Avast-my-Mate-do-you-know-where-I-can-meet-a-Wench-around-here"><span class="toc-number">4.</span> <span class="toc-text">Avast my Mate, do you know where I can meet a Wench around here?</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#It-uses-the-API-which-can-be-found-here"><span class="toc-number">4.0.1.</span> <span class="toc-text">It uses the API which can be found here.</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Screenshot"><span class="toc-number">4.1.</span> <span class="toc-text">Screenshot</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Till-the-next-time-👻"><span class="toc-number">4.1.1.</span> <span class="toc-text">Till the next time 👻</span></a></li></ol></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
     <h1 class="posttitle" itemprop="name headline">
         Talk Like a Pirate
     </h1>
 
 
 
-      <div class="meta">
-          <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
-              <span itemprop="name">A2K</span>
-          </span>
-          
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">A2K</span>
+      </span>
+      
     <div class="postdate">
         <time datetime="2016-11-13T18:30:00.000Z" itemprop="datePublished">2016-11-14</time>
     </div>
 
 
-          
+      
 
-      </div>
-    </header>
-    
+    </div>
+  </header>
+  
 
-    <div class="content" itemprop="articleBody">
-      <h1 id="DAY-14-👾"><a href="#DAY-14-👾" class="headerlink" title="DAY 14 👾"></a>DAY 14 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Talk-Like-A-Pirate-Site-It-is-a-fun-app"><a href="#Today-I-created-Talk-Like-A-Pirate-Site-It-is-a-fun-app" class="headerlink" title="Today I created Talk Like A Pirate Site. It is a fun app."></a>Today I created Talk Like A Pirate Site. It is a fun app.</h4><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a><a href="https://deadcoder0904.github.io/talk-like-a-pirate/" target="_blank" rel="external">Demo</a></h1><h4 id="You-give-it-a-text-in-English-and-it-will-convert-the-plain-English-Text-to-Piratey-Language"><a href="#You-give-it-a-text-in-English-and-it-will-convert-the-plain-English-Text-to-Piratey-Language" class="headerlink" title="You give it a text in English and it will convert the plain English Text to Piratey Language."></a>You give it a text in English and it will convert the plain English Text to Piratey Language.</h4><h2 id="What"><a href="#What" class="headerlink" title="What"></a>What</h2><p><img src="http://imgur.com/QP7tthh.png" alt="Pirate Talk"></p>
+  <div class="content" itemprop="articleBody">
+    <h1 id="DAY-14-👾"><a href="#DAY-14-👾" class="headerlink" title="DAY 14 👾"></a>DAY 14 👾</h1><h3 id="I’m-back-💙"><a href="#I’m-back-💙" class="headerlink" title="I’m back 💙"></a>I’m back 💙</h3><h4 id="Today-I-created-Talk-Like-A-Pirate-Site-It-is-a-fun-app"><a href="#Today-I-created-Talk-Like-A-Pirate-Site-It-is-a-fun-app" class="headerlink" title="Today I created Talk Like A Pirate Site. It is a fun app."></a>Today I created Talk Like A Pirate Site. It is a fun app.</h4><h1 id="Demo"><a href="#Demo" class="headerlink" title="Demo"></a><a href="https://deadcoder0904.github.io/talk-like-a-pirate/" target="_blank" rel="external">Demo</a></h1><h4 id="You-give-it-a-text-in-English-and-it-will-convert-the-plain-English-Text-to-Piratey-Language"><a href="#You-give-it-a-text-in-English-and-it-will-convert-the-plain-English-Text-to-Piratey-Language" class="headerlink" title="You give it a text in English and it will convert the plain English Text to Piratey Language."></a>You give it a text in English and it will convert the plain English Text to Piratey Language.</h4><h2 id="What"><a href="#What" class="headerlink" title="What"></a>What</h2><p><img src="http://imgur.com/QP7tthh.png" alt="Pirate Talk"></p>
 <h2 id="Explanation"><a href="#Explanation" class="headerlink" title="Explanation"></a>Explanation</h2><h1 id="Hello-my-Friend-do-you-know-where-I-can-meet-a-Woman-around-here"><a href="#Hello-my-Friend-do-you-know-where-I-can-meet-a-Woman-around-here" class="headerlink" title="Hello my Friend, do you know where I can meet a Woman around here?"></a><code>Hello my Friend, do you know where I can meet a Woman around here?</code></h1><p>gets converted to </p>
 <h1 id="Avast-my-Mate-do-you-know-where-I-can-meet-a-Wench-around-here"><a href="#Avast-my-Mate-do-you-know-where-I-can-meet-a-Wench-around-here" class="headerlink" title="Avast my Mate, do you know where I can meet a Wench around here?"></a><code>Avast my Mate, do you know where I can meet a Wench around here?</code></h1><h3 id="It-uses-the-API-which-can-be-found-here"><a href="#It-uses-the-API-which-can-be-found-here" class="headerlink" title="It uses the API which can be found here."></a><a href="http://isithackday.com/arrpi.php" target="_blank" rel="external">It uses the API which can be found here</a>.</h3><h2 id="Screenshot"><a href="#Screenshot" class="headerlink" title="Screenshot"></a>Screenshot</h2><p><img src="http://imgur.com/cUi3tym.png" alt="Pirate Talk"></p>
 <h3 id="Till-the-next-time-👻"><a href="#Till-the-next-time-👻" class="headerlink" title="Till the next time 👻"></a>Till the next time 👻</h3>
-    </div>
-  </article>
-  
+  </div>
+</article>
+
     <div class="blog-post-comments">
         <div id="disqus_thread">
             <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
@@ -82,8 +145,8 @@ ExplanationHello my F">
     </div>
 
 
-</div>
 
+      </div>
     <footer id="footer">
   <div class="footer-left">
     Copyright &copy; 2016 A2K
@@ -91,9 +154,13 @@ ExplanationHello my F">
   <div class="footer-right">
     <nav>
       <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/archives">Writing</a></li>
-        <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/archives/">Writing</a></li>
+         
+          <li><a href="http://github.com/deadcoder0904">Projects</a></li>
+        
       </ul>
     </nav>
   </div>
@@ -125,6 +192,7 @@ ExplanationHello my F">
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         }());
     </script>
+
 
 </body>
 </html>
