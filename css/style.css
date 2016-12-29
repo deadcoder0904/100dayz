@@ -1114,7 +1114,8 @@ pre code {
   float: right;
 }
 .highlight figcaption:before,
-.highlight figcaption content: "" {
+.highlight figcaption {
+  content: "";
   display: table;
 }
 .highlight figcaption:after {
